@@ -1,0 +1,33 @@
+title: O2 - Full Stack Your MAC
+subtitle: "Full Stack Your MAC - 全栈开发工程师MAC装`鸡`指南"
+description: "Best installation guide for full-stack developer using MAC OS! 全栈开发工程师MAC装机不完全手册"
+author: LV&天哥
+language: zh-cn
+timezone: UTC
+url: http://o2team.com/mac
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  repo: git@github.com:o2team/mac.git
+  branch: gh-pages
+
+disqus_shortname: o2team
+google_analytics: UA-4910098-10
+fb_admins: 100000247608790
+swiftype_key: EwN4HMy_KMxTK_GMjV1z
+twitter: o2circle
+github: o2team/mac
+gh:
+  user: o2team
+  repo: mac

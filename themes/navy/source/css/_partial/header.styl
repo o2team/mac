@@ -1,0 +1,94 @@
+header-padding-normal = 10px
+header-padding-max = 30px
+logo-size = 45px
+logo-font-size = 24px
+logo-font-color = #ffffff
+
+#header
+  position: relative
+  padding: header-padding-normal 0
+  @media print
+    display: none
+  .home &
+    padding: header-padding-max 0
+
+#header-inner
+  position: relative
+
+#logo-wrap
+  text-align: center
+
+#logo
+  // hide-text()
+  box-shadow: -5px -2px 0 0 color-link
+  width: logo-size
+  height: logo-size
+  line-height: logo-size
+  display: inline-block
+  text-align: center
+  border-radius: 50%
+  font-size: logo-font-size
+  color: logo-font-color
+  @media mq-normal
+    float: left
+
+#main-nav
+  display: none
+  float: left
+  padding-left: 20px
+  @media mq-normal
+    display: block
+
+.main-nav-item
+  float: left
+
+.main-nav-link
+  color: #fff
+  text-decoration: none
+  line-height: logo-size
+  opacity: 0.7
+  transition: 0.2s
+  font-family: font-title
+  text-transform: uppercase
+  display: block
+  padding: 0 20px
+  &:hover
+    opacity: 1
+    color: color-link-hover
+
+#search-btn-wrap
+  display: none
+  float: right
+  margin-right: 15px
+  @media mq-normal
+    display: block
+
+#search-btn
+  cursor: pointer
+
+#lang-select-wrap
+  display: none
+  position: relative
+  float: right
+  @media mq-normal
+    display: block
+
+#lang-select-label
+  color: #fff
+  opacity: 0.7
+  font-family: font-title
+  line-height: logo-size
+  span
+    padding-left: 8px
+  i
+    opacity: 0.7
+
+#lang-select
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  -webkit-appearance: menulist-button
+  font-size: inherit
