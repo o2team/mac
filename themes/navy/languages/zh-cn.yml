@@ -22,9 +22,19 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     setup: 建站
+    common: 通用
     configuration: 配置
     commands: 命令
     migration: 迁移
+    id_vd: 交互与视觉
+    interactive: 交互设计
+    visual: 视觉设计
+    fd_rd: 全栈开发 
+    dev_common: 通用配置
+    fd_dev: 前端开发
+    rd_dev: 后台开发
+    ios_dev: IOS开发
+    android_dev: Android开发
     basic_usage: 基本操作
     writing: 写作
     front_matter: Front-matter

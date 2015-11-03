@@ -1,10 +1,16 @@
 docs:
   getting_started:
     overview: index.html
-    setup: setup.html
-    configuration: configuration.html
-    commands: commands.html
-    migration: migration.html
+    common: common.html
+  id_vd:
+    interactive: interactive.html
+    visual:	visual.html
+  fd_rd:
+    dev_common: common-dev.html
+    fd_dev: dev-fd.html
+    rd_dev: dev-rd.html
+    ios_dev: dev-ios.html
+    android_dev: dev-android.html
   basic_usage:
     writing: writing.html
     front_matter: front-matter.html
