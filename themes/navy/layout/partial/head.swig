@@ -40,6 +40,6 @@
   }) }}
   <!-- Swiftype -->
   <meta class="swiftype" name="title" data-type="string" content="{{ page.title || config.title }}">
-  <!-- Google Analytics -->
-  {{ partial('google_analytics') }}
+  <!-- Baidu Analytics -->
+  {{ partial('baidu_analytics') }}
 </head>

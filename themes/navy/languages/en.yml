@@ -21,11 +21,7 @@ sidebar:
   docs:
     getting_started: Getting Started
     overview: Overview
-    setup: Setup
     common: Common
-    configuration: Configuration
-    commands: Commands
-    migration: Migration
     id_vd: Interactive & Visual Design
     interactive: Interactive Design
     visual: Visual Design
@@ -35,7 +31,7 @@ sidebar:
     rd_dev: Logic Development
     ios_dev: IOS Development
     android_dev: Android Development
-	basic_usage: Basic Usage
+    basic_usage: Basic Usage
     writing: Writing
     front_matter: Front-matter
     tag_plugins: Tag Plugins
