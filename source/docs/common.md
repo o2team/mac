@@ -103,4 +103,21 @@ title: 通用设置
 	sudo scutil --set ComputerName MacBookPro
 	```
 
+## .DS_store
+
+Mac下面压缩的时候总会自动生成 `.DS_store` 文件，用户可以自行选择是否需要生成，执行下面命令之后需要重启Mac生效。
+
+- 禁止 `.DS_store`生成：
+
+  ```
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+  ```
+
+- 恢复 `.DS_store`生成：
+
+  ```  
+  defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+  ```
+
+
 
