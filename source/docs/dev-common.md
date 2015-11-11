@@ -17,21 +17,21 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 	```
 
 - 确保HomeBrew是否正常安装
- 
+
   安装好HomeBrew之后，在`Terminal`执行下面命令确保正常安装：
-  
+
   ```
   brew doctor
   ```
-  
+
   若上面命令执行过程出现 *hombrew libevent not link* 的错误，执行下面命令即可：
-  
+
   ```
   sudo chown -R $USER $(brew --prefix)
   ```
-  
+
   确保正常安装之后，可以输入`brew -h`查看帮助：
-  
+
   ```
   Example usage:
   brew [info | home | options ] [FORMULA...]
@@ -65,26 +65,26 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
   ```
   brew search mongod
   ```
-  
+
   安装包，在搜索到想要安装的包之后，执行下面命令即可安装：
-  
+
   ```
   brew install mongod
   ```
-  
+
   更新HomeBrew在服务端的包结构：
-  
+
   ```
   brew update
   ```
-  
+
   查看安装过的包列表：
-  
+
   ```
   brew list
   ```
-  
-  
+
+
 ### HomeBrew Cask
 
 由于国内墙的问题，AppStore下载应用速度总是比较慢，而且应用更新速度也是比较慢，而HomeBrew Cask可以第一时间获取到官方最新的应用，并且下载速度杠杠的。
@@ -94,31 +94,31 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 - 安装HomeBrew Cask
 
   HomeBrew Cask依赖于Xcode以及HomeBrew，建议在装这个之前装好前面两个软件，在`Terminal`执行下面命令进行安装：
-  
+
   ```
   brew tap caskroom/cask && brew install brew-cask
   ```
-  
+
 - 使用HomeBrew Cask
 
   搜索想要安装的软件，在`Terminal`输入下面命令即可：
-  
+
   ```
   brew cask search qq
   ```
-  
+
   一些推荐安装的程序，一键搞定：
-  
+
   ```
   rew cask install alfred cleanmymac cheatsheet dropbox google-chrome sublime-text
   ```
-  
+
   如果你是一个热衷于`Alfred`的爱好者（不熟悉这个软件的下面会讲到），默认情况下`Alfred`是不会搜索到`HomeBrew Cask`安装的软件的，你需要额外执行下面命令关联起来才行：
-  
+
   ```
   brew cask alfred link
   ```
- 
+
 ### Git
 
 Mac 自带的 Git 版本相对比较旧，执行下面命令安装最新版本的 Git：
@@ -151,12 +151,12 @@ Mac 自带的 SVN 版本也是相对较旧，执行下面命令安装最新版�
 ```
 brew install svn
 ```
-  
+
 ### iTerm2 + zsh + tmux
 
 Mac下面我们大概花费70%的时间在于终端打交道，在`OS X El Capitan‎`之前，恐怕系统默认的`Terminal+bash+screen`是无法跟`iTerms+zsh+tmux`进行匹敌的，当然热爱苹果原生App的童鞋大可不必安装这三个软件，但是作为一名`前端爱好者`，装上这三个软件会让你爱不释手的。
 
-1、iTerm2拥有如下优点让我们考虑去使用它：
+#### iTerm2 - 替代terminal
 
 * 快捷键非常丰富（不一一详细列举，只列了几个目前常用的）
 
@@ -169,20 +169,18 @@ Mac下面我们大概花费70%的时间在于终端打交道，在`OS X El Capit
 * 兼容性好
 
   这一点在远程连接服务器的时候才可以体验到，默认的系统终端有时候会出现乱码问题。
-  
+
 - 安装iTerm2
 
   ```
   brew cask install iTerm2
   ```
 - 颜色和字体设置
-  
+
   下载[Solarized dark iterm colors](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)，在Preferences -> Profiles -> Default -> Colors -> Load Presets 将其导入，作为默认颜色。
-  
-  
-****
-  
-2、zsh号称终极终端神器
+
+
+#### zsh - 号称终极终端神器
 
 [zsh](https://github.com/robbyrussell/oh-my-zsh)，也叫oh-my-zsh，Mac是基于UNIX的一套系统，而Shell可以说是UNIX的一个外壳，在Mac里面我们可以在`Terminal`执行下面命令看看系统有几种shell：
 
@@ -216,20 +214,20 @@ Mac默认使用的是`bash`这个shell，英文26个字母当中`z`排在最后�
 
   ```
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
   ```
-  
+
 - 设置zsh为你的默认shell
 
   ```
   chsh -s /bin/zsh
+
   ```
-  
+
 - 更多关于`zsh`的使用请移步[这里](https://github.com/robbyrussell/oh-my-zsh)
-  
 
-****
 
-3、tmux优秀的终端复用软件
+#### tmux - 优秀的终端复用软件
 
 你是否`ssh`远程到服务器之后因为一不小心网络中断而得重新`ssh`上去？
 
@@ -257,57 +255,78 @@ Mac默认使用的是`bash`这个shell，英文26个字母当中`z`排在最后�
 - 使用
 
   Prefix-Command前置操作：所有下面介绍的快捷键，都必须以前置操作开始。tmux默认的前置操作是CTRL+b。例如，我们想要新建一个窗体，就需要先在键盘上摁下CTRL+b，松开后再摁下n键。
-  
-  
-#### Session相关操作
+
+Session相关操作
 
 | 操作 |  快捷键  |
-| :---:| :----: |
+| :---| :---- |
 |  查看/切换session |  prefix s  |
 |  离开Session |  prefix d  |
 |  重命名当前Session |  prefix $ |
 
 
-#### Window相关操作
+Window相关操作
 
 | 操作 |  快捷键  |
-| :---:| :----: |
+| :---| :---- |
 |  新建窗口 |  prefix c  |
 |  切换到上一个活动的窗口 |  prefix space  |
 |  关闭一个窗口 |  prefix & |
 |  使用窗口号切换 |  prefix 窗口号 |
 
-		
-#### Pane相关操作
+
+Pane相关操作
 
 | 操作 |  快捷键  |
-| :---:| :----: |
+| :---| :---- |
 |  切换到下一个窗格 |  prefix o  |
 |  查看所有窗格的编号 |  prefix q  |
 |  垂直拆分出一个新窗格 |  prefix “ |
 |  水平拆分出一个新窗格 |  prefix % |
 |  暂时把一个窗体放到最大 |  prefix z |
-	
-	
+
+
 - 个性化定制tmux
 
   默认情况下的`tmux`风格比较简陋，推荐使用[gpakoz的tmux配置](https://github.com/gpakosz/.tmux)，实现了如下功能：
-  
+
   - 基于powerline的美化
   - 显示笔记本电池电量
   - 和Mac互通的剪切板
   - 和vim更相近的快捷键
 
   安装方式如下：
-  
+
   ```
    cd
    rm -rf .tmux
    git clone https://github.com/gpakosz/.tmux.git
    ln -s .tmux/.tmux.conf
    cp .tmux/.tmux.conf.local .
-  ```	
-  
+  ```
+
 - 了解更多`tmux`可以点击[这里](http://foocoder.com/blog/zhong-duan-huan-jing-zhi-tmux.html/)
-	
-****
+
+
+
+### 终端里临时设置代理
+
+有时候使用终端命令例如 brew 需要设置代理以便FQ。
+
+举个例子，利用brew-cask安装macdown:
+
+```
+brew cask install macdown
+```
+
+因为macdown的安装源托管在amazonaws，不幸的是aws被Q，
+
+这时候我们可以设置终端代理为蓝灯代理，让brew-cask的相关命令顺利FQ:
+
+```
+
+ALL_PROXY=http://127.0.0.1:8787 brew cask install macdown
+
+```
+
+Done!

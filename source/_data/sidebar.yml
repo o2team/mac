@@ -6,7 +6,7 @@ docs:
     interactive: interactive.html
     visual:	visual.html
   fd_rd:
-    dev_common: common-dev.html
+    dev_common: dev-common.html
     fd_dev: dev-fd.html
     rd_dev: dev-rd.html
     ios_dev: dev-ios.html
