@@ -28,7 +28,7 @@ note-warn = hsl(0, 100%, 50%)
   @media print
     padding: 0
 
-#article-toc
+.article-toc
   display: none
   float: right
   width: sidebar-width
@@ -36,21 +36,16 @@ note-warn = hsl(0, 100%, 50%)
   opacity: 0.8
   @media mq-normal
     display: block
-  &.fixed
-    position: absolute
+  &.affix
+    position: fixed
     top: 0
-    bottom: 0
     right: sidebar-width
 
-#article-toc-inner
+.article-toc-inner
   @extend .inner
   overflow-x: hidden
   overflow-y: auto
   width: sidebar-width
-  .fixed &
-    position: fixed
-    top: 0
-    bottom: 0
 
 .toc-link
   @extend .sidebar-link

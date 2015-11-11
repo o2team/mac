@@ -19,11 +19,11 @@
               {{ partial('partial/comment') }}
             </div>
           </div>
-          <aside id="article-toc" role="navigation">
-            <div id="article-toc-inner">
+          <aside class="article-toc" id="article-toc" role="navigation">
+            <div id="article-toc-inner" class="article-toc-inner">
               <strong class="sidebar-title">{{ __('page.contents') }}</strong>
               {{ toc(page.content, {list_number: false}) }}
-              <a href="#" id="article-toc-top">{{ __('page.back_to_top') }}</a>
+              <a href="#" id="article-toc-top" class="article-toc-top">{{ __('page.back_to_top') }}</a>
             </div>
           </aside>
         </div>
