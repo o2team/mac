@@ -2,21 +2,21 @@ title: 通用配置
 ---
 
 
-### Xcode Command Line Tools
+## XCode Command Line Tools
 
 在Mac下面的很多软件安装都会涉及到`编译`，依赖于`Xcode Command Line Tools`这个工具，Mac下面的Xcode自带了这个工具，我们可以在`Terminal`输入`gcc`或者`make`,然后弹出一个选项会让你安装。为了避免其它关于编译的错误，建议去`AppStore`下载一个`Xcode`
 
-### HomeBrew
+## HomeBrew
 
 HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有的UNIX工具。
 
-- 安装HomeBrew
+### 安装HomeBrew
 
 	```
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
 
-- 确保HomeBrew是否正常安装
+### 确保HomeBrew是否正常安装
 
   安装好HomeBrew之后，在`Terminal`执行下面命令确保正常安装：
 
@@ -58,7 +58,7 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 	  brew home
   ```
 
-- 使用HomeBrew
+### 使用HomeBrew
 
   搜索一个包，在不确定想要安装的包是否有之前，建议先搜索一下，执行下面命令：
 
@@ -85,13 +85,13 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
   ```
 
 
-### HomeBrew Cask
+## HomeBrew Cask
 
 由于国内墙的问题，AppStore下载应用速度总是比较慢，而且应用更新速度也是比较慢，而HomeBrew Cask可以第一时间获取到官方最新的应用，并且下载速度杠杠的。
 
 另外，Homebrew Cask可以优雅、简单、快速的安装和管理 OS X 图形界面程序。
 
-- 安装HomeBrew Cask
+### 安装HomeBrew Cask
 
   HomeBrew Cask依赖于Xcode以及HomeBrew，建议在装这个之前装好前面两个软件，在`Terminal`执行下面命令进行安装：
 
@@ -99,7 +99,7 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
   brew tap caskroom/cask && brew install brew-cask
   ```
 
-- 使用HomeBrew Cask
+### 使用HomeBrew Cask
 
   搜索想要安装的软件，在`Terminal`输入下面命令即可：
 
@@ -119,7 +119,7 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
   brew cask alfred link
   ```
 
-### Git
+## Git
 
 Mac 自带的 Git 版本相对比较旧，执行下面命令安装最新版本的 Git：
 
@@ -144,7 +144,7 @@ source ~/.zshrc
 ```
 
 
-### SVN
+## SVN
 
 Mac 自带的 SVN 版本也是相对较旧，执行下面命令安装最新版本的 SVN：
 
@@ -152,11 +152,11 @@ Mac 自带的 SVN 版本也是相对较旧，执行下面命令安装最新版�
 brew install svn
 ```
 
-### iTerm2 + zsh + tmux
+## iTerm2 + zsh + tmux
 
 Mac下面我们大概花费70%的时间在于终端打交道，在`OS X El Capitan‎`之前，恐怕系统默认的`Terminal+bash+screen`是无法跟`iTerms+zsh+tmux`进行匹敌的，当然热爱苹果原生App的童鞋大可不必安装这三个软件，但是作为一名`前端爱好者`，装上这三个软件会让你爱不释手的。
 
-#### iTerm2 - 替代terminal
+### iTerm2 - 替代terminal
 
 * 快捷键非常丰富（不一一详细列举，只列了几个目前常用的）
 
@@ -180,7 +180,7 @@ Mac下面我们大概花费70%的时间在于终端打交道，在`OS X El Capit
   下载[Solarized dark iterm colors](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)，在Preferences -> Profiles -> Default -> Colors -> Load Presets 将其导入，作为默认颜色。
 
 
-#### zsh - 号称终极终端神器
+### zsh - 号称终极终端神器
 
 [zsh](https://github.com/robbyrussell/oh-my-zsh)，也叫oh-my-zsh，Mac是基于UNIX的一套系统，而Shell可以说是UNIX的一个外壳，在Mac里面我们可以在`Terminal`执行下面命令看看系统有几种shell：
 
@@ -227,7 +227,7 @@ Mac默认使用的是`bash`这个shell，英文26个字母当中`z`排在最后�
 - 更多关于`zsh`的使用请移步[这里](https://github.com/robbyrussell/oh-my-zsh)
 
 
-#### tmux - 优秀的终端复用软件
+### tmux - 优秀的终端复用软件
 
 你是否`ssh`远程到服务器之后因为一不小心网络中断而得重新`ssh`上去？
 
@@ -309,7 +309,7 @@ Pane相关操作
 
 
 
-### 终端里临时设置代理
+## 终端里临时设置代理
 
 有时候使用终端命令例如 brew 需要设置代理以便FQ。
 
@@ -330,3 +330,75 @@ ALL_PROXY=http://127.0.0.1:8787 brew cask install macdown
 ```
 
 Done!
+
+## Vim
+
+对于经常使用命令行终端的同学来说，`Vim` 是必备良品，它不仅仅是一个编辑器，更是一个强大的 IDE。
+
+### Vim更新
+
+截至目前(2015.11.6)Mac自带的Vim版本还是7.3版本的，而最新版本的已经是7.4了，执行下面命令更新到最新版本。
+
+```
+brew update
+brew install vim
+```
+
+上面命令会将 `Vim` 装到 `/usr/local/bin` 下面，为了让 `brew` 安装的软件覆盖系统自带的，需要在 `PATH` 增加 `/usr/local/bin` 在 `/usr/bin` 前面，修改 `.bashrc/.zshrc`：
+
+```
+export PATH="/usr/local/bin:/usr/bin"
+```
+
+然后执行下面命令让配置文件生效
+
+```
+# bash shell
+source ~/.bashrc
+
+# zsh shell
+source ~/.zshrc
+```
+
+### Vim配置
+
+关于 `Vim` 的配置网上有很多人分享出来，对于刚接触 `Vim` 的新手没有必要直接拷贝，下面提供最基本的几个配置项供参考。
+
+`Vim` 的配置文件 `.vimrc` 一般放置在 `/Users/用户名/.vimrc` ，若没有这个文件，创建即可，下面修改的就是 `.vimrc` 这个文件（`"`表示注释）。
+
+```
+set nocompatible "关闭兼容VI模式（可选项：compatible/nocompatible，若选择了compatible则tab不会转成空格）
+
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+"设置鼠标运行模式为WINDOWS模式
+behave mswin
+
+"开启语法高亮
+syntax enable
+
+"行号和标尺
+set number
+set ruler
+set rulerformat=%15(%c%V\ %p%%%)
+set relativenumber                  "设置相对行号
+
+" 状态栏显示目前所执行的指令
+set showcmd
+
+" 缩进
+set autoindent
+set smartindent
+
+" 自动重新读入
+set autoread
+
+```
+
+上面的配置文件对于基本使用是够的了，开启了`语法高亮`、`显示行号`、`自动缩进`等功能，更详细的配置可以点击 [这里](https://github.com/huangliyn/vimrc/blob/master/_vimrc) 查看我们组内一位VIM高手的配置，对于想进一步使用 `Vim` 的可以继续往下看如何装插件让 `Vim` 变得非常强大
+
+### Vim插件
+
+直接通过 [vimrc](https://github.com/amix/vimrc) 项目装上常用的插件。
+
+

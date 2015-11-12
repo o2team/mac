@@ -1,7 +1,7 @@
 <!-- Scripts -->
 <!-- build:js build/js/main.js -->
 {{ js('js/jquery-2.1.4.min') }}
-{{ js('assets/bootstrap/js/bootstrap.min') }}
+{{ js('assets/bootstrap/js/bootstrap') }}
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}

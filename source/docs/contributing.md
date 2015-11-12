@@ -1,91 +1,60 @@
-title: Contributing
+title: 贡献
 ---
-## Development
+## 完善
 
-We welcome you to join the development of Hexo. This document will help you through the process.
+[凹凸实验室](http://aotu.io) 的宗旨是 `面向开放 - Open Oriented`，所以十分欢迎大家一起参与完善我们的`全栈MAC装机指南`。本文档将帮助大家了解参与的具体过程。
 
-### Before You Start
+### 开始之前
 
-Please follow the coding style:
+本指南使用[hexo](https://hexo.io)作为静态站点引擎，请先安装hexo的本地环境。
 
-- Follow [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml).
-- Use soft-tabs with a two space indent.
-- Don't put commas first.
+``` bash
+npm i -g hexo-cli
+```
 
-### Workflow
+### 如何做？
 
-1. Fork [hexojs/hexo].
-2. Clone the repository to your computer and install dependencies.
+1. Fork 源码[o2team/mac].
+2. 克隆Fork后的仓库至你的电脑，安装依赖包。
 
     {% code %}
-    $ git clone https://github.com/<username>/hexo.git
-    $ cd hexo
+    $ git clone https://github.com/<username>/mac.git
+    $ cd mac
     $ npm install
-    $ git submodule update --init
     {% endcode %}
 
-3. Create a feature branch.
+3. 创建一个特性分支.
 
     {% code %}
     $ git checkout -b new_feature
     {% endcode %}
-    
-4. Start hacking.
-5. Push the branch:
+
+4. 启动hexo服务，预览文档
+
+    ``` bash
+    hexo s -watch
+    ```
+
+    关于hexo更多的用法，请参考hexo官网。
+   
+5. 用你喜爱的编辑器在本地电脑进行文档的修改.
+6. 提交分支:
 
     {% code %}
     $ git push origin new_feature
     {% endcode %}
     
-6. Create a pull request and describe the change.
+7. 创建PR（pull request） 并描述具体的改动.
 
-### Notice
 
-- Don't modify version number in `package.json`.
-- Your pull request will only get merged when tests passed. Don't forget to run tests before submission.
+### 注意事项
 
-    {% code %}
-    $ npm test
-    {% endcode %}
+- 别修改 `package.json` 中的版本号.
+- 我们在收到PR时会第一时间审核并Merge你的改动，请确保改动的地方不存在排版等问题。
 
-## Updating Documentation
 
-The Hexo documentation is open source and you can find the source code on [hexojs/site]. 
+## 问题反馈
 
-### Workflow
+在使用`全栈MAC装机指南`过程中碰到任何问题，可以到 [GitHub](https://github.com/o2team/mac/issues) 上留言提问。
 
-1. Fork [hexojs/site]
-2. Clone the repository to your computer and install dependencies.
-
-    {% code %}
-    $ git clone https://github.com/<username>/site.git
-    $ cd site
-    $ npm install
-    {% endcode %}
-    
-3. Start editing the documentation. You can start the server for live previewing.
-
-    {% code %}
-    $ hexo server
-    {% endcode %}
-    
-4. Push the branch.
-5. Create a pull request and describe the change.
-
-### Translating
-
-1. Add a new language folder in `source` folder. (All lower case)
-2. Copy Markdown and template files in `source` folder to the new language folder.
-3. Add the new language to `source/_data/language.yml`.
-4. Copy `en.yml` in `themes/navy/languages` and rename to the language name (all lower case).
-
-## Reporting Issues
-
-When you encounter some problems when using Hexo, you can find the solutions in [Troubleshooting](troubleshooting.html) or ask me on [GitHub](https://github.com/hexojs/hexo/issues) or [Google Group](https://groups.google.com/group/hexo). If you can't find the answer, please report it on GitHub.
-
-1. Represent the problem in [debug mode](commands.html#Debug_mode).
-2. Run `hexo version` and check the version info.    
-3. Post both debug message and version info on GitHub.
-
-[hexojs/hexo]: https://github.com/hexojs/hexo
-[hexojs/site]: https://github.com/hexojs/site
+[o2team/mac]: https://github.com/o2team/mac

@@ -11,25 +11,7 @@ docs:
     rd_dev: dev-rd.html
     ios_dev: dev-ios.html
     android_dev: dev-android.html
-  basic_usage:
-    writing: writing.html
-    front_matter: front-matter.html
-    tag_plugins: tag-plugins.html
-    asset_folders: asset-folders.html
-    data_files: data-files.html
-    server: server.html
-    generating: generating.html
-    deployment: deployment.html
-  customization:
-    permalinks: permalinks.html
-    themes: themes.html
-    templates: templates.html
-    variables: variables.html
-    helpers: helpers.html
-    internationalization: internationalization.html
-    plugins: plugins.html
   miscellaneous:
-    troubleshooting: troubleshooting.html
     contributing: contributing.html
 
 api:

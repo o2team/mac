@@ -1,6 +1,6 @@
-<div id="content-wrap">
+<div id="content-wrap" class="content-wrap">
   <div id="content" class="wrapper">
-    <div id="content-inner">
+    <div id="content-inner" class="content-inner">
       <article class="article-container" itemscope itemtype="http://schema.org/Article">
         <div class="article-inner">
           <div class="article">
@@ -22,7 +22,7 @@
           <aside class="article-toc" id="article-toc" role="navigation">
             <div id="article-toc-inner" class="article-toc-inner">
               <strong class="sidebar-title">{{ __('page.contents') }}</strong>
-              {{ toc(page.content, {list_number: false}) }}
+              {{ bstoc(page.content, {list_number: false}) }}
               <a href="#" id="article-toc-top" class="article-toc-top">{{ __('page.back_to_top') }}</a>
             </div>
           </aside>

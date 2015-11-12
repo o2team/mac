@@ -34,28 +34,51 @@ note-warn = hsl(0, 100%, 50%)
   width: sidebar-width
   margin-right: sidebar-width * -1
   opacity: 0.8
+  position:relative;
   @media mq-normal
     display: block
-  &.affix
-    position: fixed
-    top: 0
-    right: sidebar-width
 
 .article-toc-inner
   @extend .inner
   overflow-x: hidden
   overflow-y: auto
   width: sidebar-width
+  .sidebar-title {
+    margin-left:1 em
+  }    
+  &.affix
+    position: fixed
+    top: 0
 
-.toc-link
+.toc-link, .nav-link
   @extend .sidebar-link
 
-.toc-child
+.toc-child, .nav-child
   padding-left: 1em
   font-size: 0.9em
 
-#article-toc-top
+.toc-nav a {
+	padding-left: 1em
+}
+.toc-nav .active > a {
+	font-weight:bold
+}
+.toc-nav > li > a:hover,
+.toc-nav > li > a:focus {
+	text-decoration: none
+	background-color: transparent
+	border-left: 1px solid color-link
+}
+.toc-nav > .active > a,
+.toc-nav > .active:hover > a,
+.toc-nav > .active:focus > a {
+	background-color: transparent
+	border-left: 1px solid #e3e3e3
+}
+
+.article-toc-top
   margin-top: 2em
+  margin-left: 1em
   font-size: 0.9em
   text-decoration: none
   color: color-default

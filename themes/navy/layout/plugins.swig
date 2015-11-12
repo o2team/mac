@@ -1,4 +1,4 @@
-<div id="content-wrap">
+<div id="content-wrap" class="content-wrap">
   <div class="wrapper">
     <div class="inner">
       <header id="plugin-list-header">
