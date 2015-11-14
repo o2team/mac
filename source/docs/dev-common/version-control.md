@@ -25,6 +25,26 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
+### Github配置
+
+```bash
+ssh-keygen -t rsa -C "kevin@welikeinc.com"
+
+# Copy ssh key to github.com
+subl ~/.ssh/id_rsa.pub
+
+# Test connection
+ssh -T git@github.com
+
+# Set git config values
+git config --global user.name "Kevin Elliott"
+git config --global user.email "kevin@welikeinc.com"
+git config --global github.user kevinelliott
+git config --global github.token your_token_here
+
+git config --global core.editor "subl -w"
+git config --global color.ui true
+```
 
 ## SVN
 

@@ -1,6 +1,6 @@
 title: 概述
 ---
-欢迎使用`MAC全栈开发环境搭建指南`，使用过程中如碰到问题，请查看 [问题解答](troubleshooting.html) 中的解答。如问题仍未解决，请到[Github](https://github.com/o2team/mac/issues)进行提问。
+欢迎使用`MAC全栈开发环境搭建指南`，使用过程中如碰到问题，请到[Github](https://github.com/o2team/mac/issues)进行提问。
 
 ## 关于
 

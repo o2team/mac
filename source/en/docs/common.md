@@ -1,103 +1,94 @@
-title: 通用设置
+title: Common Configurations
 ---
-如没有特别的标明`开发者适用`，通用设置部分内容适用于所有使用MAC工作的朋友。
 
-## App Store 访问加速
+## App Store Speed up in Chines
 
-为网络添加DNS
+Add the following DNS to your network
 
 > 208.67.222.222
 > 208.67.220.220
 > 114.114.114.114
 
-具体设置位置为：`System Preferences > Network > Wi-Fi > Advanced > DNS`
+Your network DNS is located at `System Preferences > Network > Wi-Fi > Advanced > DNS`
 
-## 软件推荐
+## Recommended Softwares
 
-为了维护软件著作版权，`全栈MAC装机指南` 不直接提供软件下载地址，部分提供第三方网站提供的链接地址。
-
-同时我们不提供任何破解信息，请支持正版软件，如有不明白的地方，可自行度娘或谷歌。
-
-本文内容如对软件版权方存在不良影响，受影响方可在文末留言要求删除相关链接内容。
-
-### 通讯软件
+### IM
 
 1. [QQ](http://im.qq.com/macqq/index.shtml)
-2. [微信](http://weixin.qq.com/cgi-bin/readtemplate?t=mac)
+2. [WeChat](http://weixin.qq.com/cgi-bin/readtemplate?t=mac)
 3. [RTX](http://www.rtxapp.com/mac/)
 
-### 邮件客户端
+### Mail Clients
 
-推荐使用MAC自带的邮件客户端。若有其他爱好可自行安装之。
+We recommend the default Mail Client distributed along with MAC OS.
 
-### 文档创作与协作
+### Office & Writing
 
 1. [Office](http://soft.macx.cn/soft4350.htm)
-2. [印象笔记](https://www.yinxiang.com/)
+2. [Evernote](https://www.evernote.com/)
 3. [OneNote](https://onenote.com)
-4. [马克飞象](https://maxiang.io)
+4. [Marxi.co](https://marxi.co/)
 
-### 解压缩
+### Achive & Unachive
 
 1. The Unachiver
 
-    轻量免费易用，可在App Store下载。
+    You can install it at App Store.
 
-### 截图
+### Screenshot
 
-#### 自带截图功能
+#### Default Screenshot features
 
-1. 截取整个屏幕
+1. shot the whole screen
 
-  	快捷键：Command+shift+3,这样就截图了整个屏幕，然后截屏的图片保存在桌面上，默认是png格式的。
+  	Keyboard Shorcuts: `Command+shift+3`
+    The screenshot will be saved to Desktop in `png` format by default.
 
-2. 截图某个特定的活动窗口
+2. shot a specified active window
 
-  	操作方式：按下快捷键：Command+shift+4+空格
+  	Keyboard shortcuts: `Command+shift+4+Space`
 
-3. 随意截图
+3. shot a custom area
 
-  	操作方式：按下快捷键：Command+shift+4，然后通过鼠标来选取要截图的区域，松下鼠标按键即可完成截图，截图同样保存在桌面，默认png格式。
+  	Keyboard shortcuts: Command+shift+4
+    Using your mouse to make a selection and click to shot.
 
-如果想截屏到剪贴板，请在上面的快捷键中多加一个control键！
+By default, the screenshots will be saved to Desktop. Combine the `control` key to the shortcuts if you wanna save the sceenshots the system clipboard.  
 
-#### 第三方截图软件
+#### Third-party screenshot softwares
 
 1. [Snip](http://snip.qq.com/)
 
-  	腾讯的一个小而强大的截屏软件，支持浏览器滚屏截图。
+    Cool free sceenshot software distributed by Tencent, which supporting making screenshot on browser's scrolling window.
 
-### 穿墙
+### Free Proxy for Chineses
 
-在写这篇文章的时候，红杏已挂，GoAgent不可用。除了VPN或自行搭建代理之外，推荐`蓝灯 Lantern`，有心者自行百度。
+Google or Baidu `Lantern` please.
 
-### 系统、软件清理
+### System Cleanup
 
 1. [ClearMyMac](https://www.baidu.com/s?wd=cleanmymac)
 
-  	清垃圾，协作软件不二之选
-
-### 移动硬盘兼容
+### Disks enhancement
 
 1. [Mounty](http://soft.macx.cn/6112.htm)
 
-	默认情况下Mac不支持写Windows下NTFS格式的移动硬盘，通过安装
+    Support reading and writing to external disks formatted in NTFS. 
 
-## 更改帐户名、主机名、计算机名
+## Modify Account, HostName, and Computer name
 
-1. 帐户信息修改
+1. Account info
 
-  	`System Preferences > Users & Groups > 右单击当前用户 > Advanced Options`
+  	`System Preferences > Users & Groups > Right click on the current user > Advanced Options`
 
- 	注意：用了一段时间的电脑不建议修改，可能会导致很多软件要重新安装。
-
-2. 主机名修改
+2. HostName
 
   	``` bash
 	sudo scutil --set HostName MacBookPro
 	```
 
-3. 计算机名修改
+3. Computer Name
 
 	``` bash
 	sudo scutil --set ComputerName MacBookPro
@@ -105,19 +96,14 @@ title: 通用设置
 
 ## .DS_store
 
-Mac下面压缩的时候总会自动生成 `.DS_store` 文件，用户可以自行选择是否需要生成，执行下面命令之后需要重启Mac生效。
-
-- 禁止 `.DS_store`生成：
+- Fuck off `.DS_store`
 
   ```
   defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
   ```
 
-- 恢复 `.DS_store`生成：
+- Restore `.DS_store`
 
   ```  
   defaults delete com.apple.desktopservices DSDontWriteNetworkStores
   ```
-
-
-

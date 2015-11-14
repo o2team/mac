@@ -1,30 +1,29 @@
 title: Homebrew
 ---
 
-拿到一台新的MAC，首先推荐安装`HomeBrew`。
-HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有的UNIX工具、软件。
+The missing package manager for OS X.
 
-### 安装HomeBrew
+> For more details on Homebrew, please check the [Homebrew Github](https://github.com/Homebrew/homebrew).
+
+## Install HomeBrew
 
 	```bash
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	```
 
-### 确保HomeBrew是否安装正常
-
-  安装好HomeBrew之后，在`Terminal`执行下面命令确保正常安装：
+## Verify HomeBrew
 
   ```bash
   brew doctor
   ```
 
-  若上面命令执行过程出现 *hombrew libevent not link* 的错误，执行下面命令即可：
+  If you encounter the error *hombrew libevent not link* ，try to fix it as bellow：
 
   ```bash
   sudo chown -R $USER $(brew --prefix)
   ```
 
-  确保正常安装之后，可以输入`brew -h`查看帮助：
+  Use `brew -h` to check what brew provides：
 
   ```bash
   Example usage:
@@ -52,74 +51,67 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 	  brew home
   ```
 
-### 使用HomeBrew
+## How to use HomeBrew
 
-  搜索一个包，在不确定想要安装的包是否有之前，建议先搜索一下，执行下面命令：
+  Search before installation.
 
   ```bash
   brew search mongod
   ```
 
-  安装包，在搜索到想要安装的包之后，执行下面命令即可安装：
+  Install specified package.
 
   ```bash
   brew install mongod
   ```
 
-  更新HomeBrew在服务端的包结构：
+  Synchronize the packages information of HomeBrew Server：
 
   ```bash
   brew update
   ```
 
-  查看安装过的包列表：
+  Check what we installed
 
   ```bash
   brew list
   ```
 
+## Install Homebrew extension Cask
 
-## HomeBrew Cask
+```bash
+brew install caskroom/cask/brew-cask
+```
 
-回顾一下我们在`windows`下面安装一个软件的过程：
+## Install common applications via Homebrew
 
-1. 打开浏览器
-2. 搜索应用名字
-3. 打开应用网站
-4. 找到对应下载路径
-5. 下载应用
-6. 安装下载文件
+```bash
+brew install ack autojump automake colordiff curl git git-flow \
+             hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt \
+             readline redis tmux wget libxml2
+```
 
-你想在`Mac`下面告别这种繁琐的安装流程么？那么试试`HomeBrew Cask`吧。 
+## Install applications via Homebrew Cask
 
-如果上面的理由还不能说服你，另外由于国内墙的问题，AppStore下载应用速度总是比较慢，而且应用更新速度也是比较慢，而HomeBrew Cask可以第一时间获取到官方最新的应用，并且下载速度杠杠的。
-
-另外，Homebrew Cask可以优雅、简单、快速的安装和管理 OS X 图形界面程序。
-
-### 安装HomeBrew Cask
-
-  HomeBrew Cask依赖于Xcode以及HomeBrew，建议在装这个之前装好前面两个软件，在`Terminal`执行下面命令进行安装：
-
-  ```bash
-  brew tap caskroom/cask && brew install brew-cask
-  ```
-
-### 使用HomeBrew Cask
-
-  搜索想要安装的软件，在`Terminal`输入下面命令即可：
-
-  ```bash
-  brew cask search qq
-  ```
-
-  一些推荐安装的程序，一键搞定：
-
-  ```bash
-  rew cask install alfred cleanmymac cheatsheet dropbox google-chrome sublime-text
-  ```
-
-  如果你是一个热衷于`Alfred`的爱好者（不熟悉这个软件的下面会讲到），默认情况下`Alfred`是不会搜索到`HomeBrew Cask`安装的软件的，你需要额外执行下面命令关联起来才行：
-
-  ```bash
-  brew cask alfred link
-  ```
+```bash
+brew cask install anvil
+brew cask install atom
+brew cask install authy-bluetooth
+brew cask install awareness
+brew cask install bartender
+brew cask install battery-guardian
+brew cask install github
+brew cask install google-chrome
+brew cask install joinme
+brew cask install iterm2
+brew cask install parallels
+brew cask install rescuetime
+brew cask install rubymine
+brew cask install satellite-eyes
+brew cask install sidestep
+brew cask install sonos
+brew cask install spotify
+brew cask install steam
+brew cask install vagrant
+brew cask install vagrant-manager
+```

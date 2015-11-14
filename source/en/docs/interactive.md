@@ -1,9 +1,8 @@
-title: 交互设计
+title: Interactive Design
 ---
-12月我们将邀请专业的交互设计师协助撰写此文档。
+We will invite someone to write this document soon..
 
-## 软件推荐
+## Recommended Softwares
 
 1. [Axure RP Pro](http://soft.macx.cn/5902.htm)
 2. [Briefs](http://soft.macx.cn/5442.htm)
-    移动APP交互设计神器

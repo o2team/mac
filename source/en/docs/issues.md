@@ -1,6 +1,6 @@
-title: 常见问题
+title: Common Issues
 ---
 
-## CSV文件打开乱码
+## CSV Messy Chinese
 
-有时候程序导出来的csv文件在mac下用excel打开会乱码，此时可以用Numbers试试。
+You may see messy Chinese charaters in CSV file when opening with Excel, try Numbers then.

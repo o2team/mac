@@ -1,7 +1,7 @@
 title: Android Studio
 ---
 
-## Yosemite 下无法启动AS,并报java se版本问题
+## Can't start Android Studio at Yosmite 
 
-到http://support.apple.com/kb/DL1572 下载安装java补丁
+Install the java patch from here: http://support.apple.com/kb/DL1572
 

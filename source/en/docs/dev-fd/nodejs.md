@@ -1,9 +1,11 @@
 title: NodeJS 
 ---
 
-建议使用 [NVM](https://github.com/creationix/nvm) 对`Node`进行管理，在安装Node之前可以先安装好`NVM`，下面几种安装方式任选其一即可。
+We recommend installing `Node` Via [NVM](https://github.com/creationix/nvm). So install `NVM` firstly before installing `Node`. 
 
-## 安装NVM
+## Install NVM
+
+Choose one of the methods below to install NVM.
 
 - curl
 
@@ -15,72 +17,113 @@ title: NodeJS
   ```
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash  
   ```
-- **git**（建议这种安装方法，能够获取到最新的NVM版本）
+- **git**（Recommended!）
   
   ```
   git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
   . ~/.nvm/nvm.sh
   ```
 
-上述操作成功之后，打开`Terminal`输入`NVM`，若能看到帮助信息说明安装成功。
+## Use NVM
 
-## 使用NVM
+You can create an `.nvmrc` file containing version number in the project root directory (or any parent directory).
+`nvm use`, `nvm install`, `nvm exec`, `nvm run`, and `nvm which` will all respect an `.nvmrc` file when a version is not supplied.
 
-安装好 `NVM` 之后就可以安装指定版本的`Node`了，假设安装4.2版本的可以执行下面命令：
+To download, compile, and install the latest v5.0.x release of node, do this:
 
-	nvm install 4.2
-	
-`NVM`可以同时安装多个版本的`Node`，切换使用也是相当方便，下面命令指定使用4.2版本的：
-	
-	nvm use 4.2
-	
-查看你安装的`Node`列表：
-	
-	nvm ls
-	
-`NVM`默认从 [http://nodejs.org/dist/](http://nodejs.org/dist/) 下载资源，速度相对较慢，我们可以切换到国内的源：
+    nvm install 5.0
 
-	export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
-	source ~/git/nvm/nvm.sh
+And then in any new shell just use the installed version:
+
+    nvm use 5.0
+
+Or you can just run it:
+
+    nvm run 5.0 --version
+
+Or, you can run any arbitrary command in a subshell with the desired version of node:
+
+    nvm exec 4.2 node --version
+
+You can also get the path to the executable to where it was installed:
+
+    nvm which 5.0
+
+In place of a version pointer like "0.10" or "5.0" or "4.2.1", you can use the following special default aliases with `nvm install`, `nvm use`, `nvm run`, `nvm exec`, `nvm which`, etc:
+
+ - `node`: this installs the latest version of [`node`](https://nodejs.org/en/)
+ - `iojs`: this installs the latest version of [`io.js`](https://iojs.org/en/)
+ - `stable`: this alias is deprecated, and only truly applies to `node` `v0.12` and earlier. Currently, this is an alias for `node`.
+ - `unstable`: this alias points to `node` `v0.11` - the last "unstable" node release, since post-1.0, all node versions are stable. (in semver, versions communicate breakage, not stability).
+
+If you want to install a new version of Node.js and migrate npm packages from a previous version:
+
+    nvm install node --reinstall-packages-from=node
+
+This will first use "nvm version node" to identify the current version you're migrating packages from. Then it resolves the new version to install from the remote server and installs it. Lastly, it runs "nvm reinstall-packages" to reinstall the npm packages from your prior version of Node to the new one.
+
+You can also install and migrate npm packages from specific versions of Node like this:
+
+    nvm install v5.0 --reinstall-packages-from=4.2
+    nvm install v4.2 --reinstall-packages-from=iojs
+
+If you want to install [io.js](https://github.com/iojs/io.js/):
+
+    nvm install iojs
+
+If you want to install a new version of io.js and migrate npm packages from a previous version:
+
+    nvm install iojs --reinstall-packages-from=iojs
+
+The same guidelines mentioned for migrating npm packages in Node.js are applicable to io.js.
+
+If you want to use the system-installed version of node, you can use the special default alias "system":
+
+    nvm use system
+    nvm run system --version
+
+If you want to see what versions are installed:
+
+    nvm ls
+
+If you want to see what versions are available to install:
+
+    nvm ls-remote
+
+To restore your PATH, you can deactivate it.
+
+    nvm deactivate
+
+To set a default Node version to be used in any new shell, use the alias 'default':
+
+    nvm alias default node
+
+To use a mirror of the node binaries, set `$NVM_NODEJS_ORG_MIRROR`:
+
+    export NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
+    nvm install node
+
+    NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist nvm install 4.2
+
+To use a mirror of the iojs binaries, set `$NVM_IOJS_ORG_MIRROR`:
+
+    export NVM_IOJS_ORG_MIRROR=https://iojs.org/dist
+    nvm install iojs-v1.0.3
+
+    NVM_IOJS_ORG_MIRROR=https://iojs.org/dist nvm install iojs-v1.0.3
+
+`nvm use` will not, by default, create a "current" symlink. Set `$NVM_SYMLINK_CURRENT` to "true" to enable this behavior, which is sometimes useful for IDEs.
+
+
+For more details on how to use NVM, please referring to the [NVM's github](https://github.com/creationix/nvm) 
+
 	
 ## NPM
 
-`NPM`作为`Node`的包管理器，现在是随着`Node`的安装同时进行安装的，通过`NPM`可以很方便地对包进行管理。
+`NPM` is the package manager of NodeJS, it was installed automatically when installing `Node`.
 
-### NPM加速
+### Speed-up NPM in China
 
-`NPM`默认是从 [http://register.npmjs.org/](http://register.npmjs.org/) 进行资源的下载，在碰到需要`node-gyp`进行编译的时候还要从 [http://nodejs.org/dist/](http://nodejs.org/dist/) 重新下载一次资源，这会导致下载速度非常慢，通过下面命令切换下载源加速`NPM`。
+If you are living in China, you can change the registry of NPM as bellow:
 
 	$ npm --registry=https://registry.npm.taobao.org --disturl=https://npm.taobao.org/dist
-	
-### 解决NPM全局安装需要Sudo的问题
-
-1. 创建全局包目录
-
-	```
-	$ mkdir "${HOME}/.npm-packages"
-	```
-	
-2. 在.bashrc/.zshrc中增加下面代码
-	
-	```
-	NPM_PACKAGES="${HOME}/.npm-packages"
-	NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-	PATH="$NPM_PACKAGES/bin:$PATH"
-	```
-3. 在 $HOME/.npmrc 中增加下面代码
-
-	```
-	prefix=${HOME}/.npm-packages
-	```
-	
-如果你很懒，那么你可以看看 [这里](https://github.com/glenpike/npm-g_nosudo) 的说明进行自动化帮你解决问题！
-
-### npm install xxx报 EACCESS,mkdir错误
-
-  ~/.npm目录权限问题，
-
-  ```
-  sudo chown -R $USER:$GROUP ~/.npm
-  npm cache clean
-  ```

@@ -1,23 +1,23 @@
 title: Alcatraz 
 ---
 
-Alcatraz是一款开源的XCode包管理插件，你可以利用它安装主题皮肤等其他插件。
+The package manager for xcode.
 
-## 安装
+## Installation
 
 ``` bash
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
 ```
 
-## 卸载
+## Uninstallation
 
-1. 删除插件
+1. Remove plugins
 
   ``` bash
   rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin
   ```
 
-2. 删除缓存
+2. Remove caches
 
   ``` bash
   rm -rf ~/Library/Application\ Support/Alcatraz

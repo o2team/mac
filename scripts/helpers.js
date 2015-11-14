@@ -49,7 +49,9 @@ hexo.extend.helper.register('doc_sidebar', function(className){
   var result = '';
   var self = this;
   var prefix = 'sidebar.' + type + '.';
-  var docRoot = this.url_for('docs/');
+  var lang = this.page.lang;
+  var isDefaultLang = lang === 'zh-cn';
+  var docRoot = this.url_for( isDefaultLang ? 'docs/' : lang + '/docs/' );
 
   _.each(sidebar, function(menu, title){
     result += '<strong class="' + className + '-title">' + self.__(prefix + title) + '</strong>';

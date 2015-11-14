@@ -1,7 +1,7 @@
-title: Markdown手册 
+title: Markdown Cheatsheet 
 ---
 
-> 本手册参考自 [a Gist](https://gist.github.com/jonschlinkert/5854601)。  
+> REF: [a Gist](https://gist.github.com/jonschlinkert/5854601)。  
 
 
 # Typography 

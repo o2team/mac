@@ -51,7 +51,7 @@ sudo chmod u+s /usr/local/Cellar/nginx/1.8.0/bin/nginx
 nginx -t && nginx -s reopen
 ```
 
-设置Nginx为开机启动：
+### 设置Nginx为开机启动
 
 ```
 ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
