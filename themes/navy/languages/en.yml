@@ -46,45 +46,5 @@ sidebar:
     crash_logs: Crash Logs 
     dev_android: Android Development
     android_studio: Android Studio
-    basic_usage: Basic Usage
-    writing: Writing
-    front_matter: Front-matter
-    tag_plugins: Tag Plugins
-    asset_folders: Asset Folders
-    data_files: Data Files
-    server: Server
-    generating: Generating
-    deployment: Deployment
-    customization: Customization
-    permalinks: Permalinks
-    themes: Themes
-    structure: Structure
-    templates: Templates
-    variables: Variables
-    helpers: Helpers
-    internationalization: Internationalization (i18n)
-    plugins: Plugins
     miscellaneous: Miscellaneous
-    troubleshooting: Troubleshooting
     contributing: Contributing
-  api:
-    core: Core
-    overview: Overview
-    events: Events
-    locals: Locals
-    router: Router
-    box: Box
-    rendering: Rendering
-    posts: Posts
-    scaffolds: Scaffolds
-    themes: Themes
-    extensions: Extensions
-    console: Console
-    deployer: Deployer
-    filter: Filter
-    generator: Generator
-    helper: Helper
-    migrator: Migrator
-    processor: Processor
-    renderer: Renderer
-    tag: Tag

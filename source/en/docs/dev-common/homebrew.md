@@ -4,13 +4,13 @@ title: Homebrew
 拿到一台新的MAC，首先推荐安装`HomeBrew`。
 HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有的UNIX工具、软件。
 
-## 安装HomeBrew
+### 安装HomeBrew
 
-```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+	```bash
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	```
 
-## 确保HomeBrew是否安装正常
+### 确保HomeBrew是否安装正常
 
   安装好HomeBrew之后，在`Terminal`执行下面命令确保正常安装：
 
@@ -52,7 +52,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 	  brew home
   ```
 
-## 使用HomeBrew
+### 使用HomeBrew
 
   搜索一个包，在不确定想要安装的包是否有之前，建议先搜索一下，执行下面命令：
 
@@ -77,6 +77,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
   ```bash
   brew list
   ```
+
 
 ## HomeBrew Cask
 

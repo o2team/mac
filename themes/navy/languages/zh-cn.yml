@@ -33,7 +33,7 @@ sidebar:
     version_control: 版本控制
     vim: Vim编辑器
     markdown: Markdown手册
-    misc: 其他
+    misc: 其他设置
     dev_fd: 前端开发
     sublime_text: Sublime Text 
     nodejs: NodeJS
@@ -46,39 +46,5 @@ sidebar:
     crash_logs: 崩溃日志 
     dev_android: Android开发
     android_studio: Android Studio
-    server: 服务器
-    generating: 生成器
-    deployment: 部署
-    customization: 自定义
-    permalinks: 永久链接
-    themes: 主题
-    structure: 结构
-    templates: 模版
-    variables: 变量
-    helpers: 辅助函数
-    internationalization: 国际化 (i18n)
-    plugins: 插件
     miscellaneous: 其他
-    troubleshooting: 问题解答
     contributing: 贡献
-  api:
-    core: 核心
-    overview: 概述
-    events: 事件
-    locals: 本地变量
-    router: 路由
-    box: 盒(Box)
-    rendering: 渲染
-    posts: 文章
-    scaffolds: 模版 (Scaffold)
-    themes: 主题
-    extensions: 扩展
-    console: 控制台 (Console)
-    deployer: 部署器 (Deployer)
-    filter: 过滤器 (Filter)
-    generator: 生成器 (Generator)
-    helper: 辅助函数 (Helper)
-    migrator: 迁移器 (Migrator)
-    processor: 处理器 (Processor)
-    renderer: 渲染引擎 (Renderer)
-    tag: 标签 (Tag)
