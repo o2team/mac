@@ -1,16 +1,15 @@
 <!-- Scripts -->
 <!-- build:js build/js/main.js -->
 {{ js('js/jquery-2.1.4.min') }}
+{{ js('js/retina') }}
 {{ js('assets/bootstrap/js/bootstrap') }}
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
 <!-- endbuild -->
-<script src="//cdn.jsdelivr.net/retinajs/1.1.0/retina.min.js" async></script>
 {% if page.layout === 'plugins' %}
-<!-- Plugin search -->
-<script src="//cdn.jsdelivr.net/lunr/0.5.7/lunr.min.js"></script>
 <!-- build:js build/js/plugins.js -->
+{{ js('js/lunr') }}
 {{ js('js/plugins') }}
 <!-- endbuild -->
 {% endif %}

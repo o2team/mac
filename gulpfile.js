@@ -17,29 +17,61 @@ var htmlMinifierOptions = {
 
 var dirs = {
   public: 'public',
-  screenshots: 'public/build/screenshots'
+  revSrc: 'public/build',
+  revDist: 'public/dist',
+  fonts: 'public/fonts',
+  screenshots: 'public/dist/screenshots'
 };
 
 gulp.task('useref', function(){
-  var assets = $.useref.assets({
-    searchPath: 'public'
-  });
 
   return gulp.src('public/**/*.html')
-    .pipe(assets)
+    .pipe($.useref({searchPath:'public'}))
     .pipe($.if('*.css', $.postcss([
       cssnano()
     ])))
     .pipe($.if('*.css', $.minifyCss()))
     .pipe($.if('*.js', $.uglify()))
-    .pipe($.rev())
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.revReplace({
-      prefix: '/'
-    }))
     .pipe($.if('*.html', $.htmlMinifier(htmlMinifierOptions)))
     .pipe(gulp.dest('public'));
+});
+
+gulp.task('fonts', function(){
+
+
+    return gulp.src([dirs.fonts + '/**/*'], {base: dirs.public})
+        .pipe($.rev())
+        .pipe(gulp.dest(dirs.revDist))
+        .pipe($.rev.manifest('rev-fonts.json'))
+        .pipe(gulp.dest(dirs.revDist));
+
+});
+
+
+gulp.task('rev', ['useref', 'fonts'], function(){
+
+    var basePath = dirs.revSrc,
+        distPath = dirs.revDist;
+
+    return gulp.src([basePath+'/css/*.css', basePath + '/js/*.js'], {base: basePath})
+        .pipe($.rev())
+        .pipe(gulp.dest(distPath))
+        .pipe($.rev.manifest())
+        .pipe(gulp.dest(distPath));
+
+});
+
+gulp.task("revreplace", ["rev"], function(){
+
+  return gulp.src([dirs.public + '/**/rev-manifest.json', "public/**/*.html", "public/dist/**/*.css"])
+	.pipe($.revCollector({
+		replaceReved:true,
+		dirReplacements: {
+			'build/':'dist/'
+		}
+	}))
+	.pipe($.ignore.exclude('./**/rev-*.json'))
+    .pipe(gulp.dest(dirs.public));
 });
 
 gulp.task('screenshot:rev', function(){
@@ -57,7 +89,7 @@ gulp.task('screenshot:resize', ['screenshot:rev'], function(){
     crop: true
   };
 
-  return gulp.src('public/build/screenshots/*.png')
+  return gulp.src('public/dist/screenshots/*.png')
     // Append "@2x" to the original images
     .pipe($.rename({
       suffix: '@2x'
@@ -80,11 +112,11 @@ gulp.task('screenshot:revreplace', ['screenshot:rev'], function(){
     .pipe($.revCollector({
       replaceReved: true,
       dirReplacements: {
-        '/themes/screenshots': '/build/screenshots'
+        '/themes/screenshots': '/dist/screenshots'
       }
     }))
     .pipe(gulp.dest('public/themes'));
 });
 
 gulp.task('screenshot', ['screenshot:rev', 'screenshot:resize', 'screenshot:revreplace']);
-gulp.task('default', ['useref', 'screenshot']);
+gulp.task('default', ['revreplace', 'screenshot']);
