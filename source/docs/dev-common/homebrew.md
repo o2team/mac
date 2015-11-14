@@ -6,27 +6,27 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 
 ### 安装HomeBrew
 
-	```
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	```
+  ```bash
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ```
 
 ### 确保HomeBrew是否安装正常
 
   安装好HomeBrew之后，在`Terminal`执行下面命令确保正常安装：
 
-  ```
+  ```bash
   brew doctor
   ```
 
   若上面命令执行过程出现 *hombrew libevent not link* 的错误，执行下面命令即可：
 
-  ```
+  ```bash
   sudo chown -R $USER $(brew --prefix)
   ```
 
   确保正常安装之后，可以输入`brew -h`查看帮助：
 
-  ```
+  ```bash
   Example usage:
   brew [info | home | options ] [FORMULA...]
   brew install FORMULA...
@@ -56,25 +56,25 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 
   搜索一个包，在不确定想要安装的包是否有之前，建议先搜索一下，执行下面命令：
 
-  ```
+  ```bash
   brew search mongod
   ```
 
   安装包，在搜索到想要安装的包之后，执行下面命令即可安装：
 
-  ```
+  ```bash
   brew install mongod
   ```
 
   更新HomeBrew在服务端的包结构：
 
-  ```
+  ```bash
   brew update
   ```
 
   查看安装过的包列表：
 
-  ```
+  ```bash
   brew list
   ```
 
@@ -89,7 +89,7 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 
   HomeBrew Cask依赖于Xcode以及HomeBrew，建议在装这个之前装好前面两个软件，在`Terminal`执行下面命令进行安装：
 
-  ```
+  ```bash
   brew tap caskroom/cask && brew install brew-cask
   ```
 
@@ -97,18 +97,18 @@ HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有
 
   搜索想要安装的软件，在`Terminal`输入下面命令即可：
 
-  ```
+  ```bash
   brew cask search qq
   ```
 
   一些推荐安装的程序，一键搞定：
 
-  ```
+  ```bash
   rew cask install alfred cleanmymac cheatsheet dropbox google-chrome sublime-text
   ```
 
   如果你是一个热衷于`Alfred`的爱好者（不熟悉这个软件的下面会讲到），默认情况下`Alfred`是不会搜索到`HomeBrew Cask`安装的软件的，你需要额外执行下面命令关联起来才行：
 
-  ```
+  ```bash
   brew cask alfred link
   ```
