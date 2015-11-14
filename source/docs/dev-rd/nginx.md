@@ -1,11 +1,7 @@
-title: 后台开发
+title: NGinx服务器 
 ---
 
-
-
-## Nginx
-
-### Nginx安装
+## Nginx安装
 
 执行下面命令安装最新版的Nginx：
 
@@ -34,7 +30,7 @@ Options:
 
 ```
 
-启动服务器（需要输入`root`密码）
+## 启动服务
 
 ```
 sudo nginx
@@ -62,11 +58,11 @@ ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 ```
 
-### Nginx配置
+## Nginx配置
 
 `Nginx`的配置文件主要分四个部分：
 
-1. main（全局设置）  
+### main（全局设置）  
 
    **这部分的指令将会影响其他部分的设置**
    
@@ -86,7 +82,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
    
      写在*events*部分，在Linux操作系统下，Nginx默认使用epoll事件模型，得益于此，Nginx在Linux操作系统下效率相当高。同时Nginx在OpenBSD或FreeBSD操作系统上采用类似于epoll的高效事件模型kqueue。
      
-2. http（服务器设置）
+### http（服务器设置）
 
    **提供http服务相关的一些配置参数，如：是否使用keepalive，是否使用gzip进行压缩**
    
@@ -110,7 +106,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 
      缓冲区代理缓冲用户用户端请求的最大字节数
      
-3. server（主机设置）
+### server（主机设置）
 
    **http服务上支持若干虚拟主机，每个虚拟主机对应一个server配置项**
    
@@ -122,7 +118,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 
      服务器名，如`localhost`、`www.jd.com`，可以通过正则匹配
      
-4. location（URL匹配特定位置配置）
+### location（URL匹配特定位置配置）
 
    **http服务中，某些特定的URL对应的一系列配置项**
    
@@ -184,83 +180,66 @@ http {
 }
 ```
 
+## 其他常用设置
 
-## Mongodb
+1. 修改端口listen
 
-### 安装
+  ```
+  sudo nginx -s stop
+  sudo vi /usr/local/etc/nginx/nginx.conf
+  # 改完后重启
+  sudo nginx
+  ```
 
-在终端执行下面命令安装Mongodb
+2. 多站点配置
 
-```
-brew install mongodb
-```
+  为了灵活配置nginx的站点，可以参考以下配置：
 
-安装成功之后可以执行下面命令查看帮助信息
+  A. 在/usr/local/etc/nginx/下面新建两个目录：sites-available和sites-enabled
 
-```
-mongod -h
+  B. 在sites-available里面新建default.conf，将nginx.conf里面的默认站点配置的内容拷贝过去，并注释掉原内容
 
-# 下面列举帮助信息中常用的几个
+  C. 在nginx.conf里面增加以下内容
 
---port arg #指定启动mongo的端口号，默认为27017
---dbpath arg #指定启动mongo的数据库位置，默认为/etc/db，需要手动创建并修改权限
+    ```
+    include /usr/local/etc/nginx/sites-enabled/*;
+    ```
 
-```
+  D. 将sites-available目录下的配置建立symlink至site-enabled目录
 
-如果采用默认数据库位置，需要执行下面命令创建数据库文件夹并修改权限
+    ln -sfv /usr/local/etc/nginx/sites-available/default.conf /usr/local/etc/nginx/sites-enabled/default.conf
 
-```
-sudo mkdir -p /data/db
-sudo chown -R cainengtian /data  # 将cainengtian替换成自己的用户名
-```
+  E. 重启nginx服务
 
-启动mongodb，在终端输入下面命令
+    ```
+    # restart
+    sudo nginx -s stop
+    sudo nginx
+    ````
 
-```
-# 默认启动，数据库位置采用/etc/db，端口号采用27017
-mongod
+3. 修改默认的html站点目录
 
-# 设置自己的数据库位置和端口号
-mongod --dbpath /etc/mongodb/db --port 28000
-```
+  默认的目录在这里：
 
-### 基本命令
+  ```
+  /usr/local/Cellar/nginx/1.2.3/html
+  ```
 
-在终端执行下面命令进入mongodb的shell模式
+  其中1.2.3是版本，根据实际按照情况不同
 
-```
-# 这里的数据库采用默认的位置/etc/db
-mongo
-```
+  跑去nginx.conf文件中修改默认目录：
 
-进去shell模式之后就可以使用mongodb的一些命令，下面介绍几个基本的命令：
+  ```
+  server {
+    listen       80;
+    server_name  localhost;
 
-- show databases(show dbs)
-  
-  输入`show databases;`或`show dbs;`回车就会列出当前的数据库名称及其大小
-  
-- use <database name>
+    #access_log  logs/host.access.log  main;
 
-  输入`use <database name>`就会切换到指定的数据库，若没有这个数据库会自动创建。
+    location / {
+        root   html;
+        index  index.html index.htm;
+    }
+  ```
 
-- db.dropDatabase()
-
-  使用了`use <database name>`之后，若需要删除当前的数据库，则输入`db.dropDatabase();`即可
- 
-- showcollections  
-
-  进去数据库之后，可以执行`showcollections;`查看当前数据库的所有集合
-  
-- insert()
-
-  对数据库的某个集合插入数据，格式`db.<集合名>.insert()`
-   
-- find()
-
-  进入数据库之后可以对某个集合进行查询，格式`db.<集合名>.find()`
-
-- pretty()
-
-  查询的时候加上`.pretty()`实现数据格式化输出
-  
-更多命令可以在执行了`mongo`进入shell模式之后输入`help`进行帮助查询
+  默认目录即上面的root的地方，可以修改成用户目录，例如: /User/lv/www

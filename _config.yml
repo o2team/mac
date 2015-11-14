@@ -22,7 +22,8 @@ deploy:
   repo: git@github.com:o2team/mac.git
   branch: gh-pages
 
-disqus_shortname: o2team
+disqus_shortname:
+duoshuo_shortname: aotumac
 google_analytics: UA-4910098-10
 baidu_analytics: bb4b770d7fdf4e05245cd1327199d813
 fb_admins: 100000247608790

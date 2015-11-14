@@ -22,21 +22,30 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     common: 通用
+    issues: 常见问题
     id_vd: 交互与视觉
     interactive: 交互设计
     visual: 视觉设计
     fd_rd: 全栈开发 
-    dev_common: 通用配置
-    fd_dev: 前端开发
-    rd_dev: 后台开发
-    ios_dev: IOS开发
-    android_dev: Android开发
-    basic_usage: 基本操作
-    writing: 写作
-    front_matter: Front-matter
-    tag_plugins: 标签插件
-    asset_folders: 资源文件夹
-    data_files: 数据文件夹
+    dev_common: 通用开发
+    homebrew: Homebrew
+    shell_terminal: Shell和终端
+    version_control: 版本控制
+    vim: Vim编辑器
+    markdown: Markdown手册
+    misc: 其他
+    dev_fd: 前端开发
+    sublime_text: Sublime Text 
+    nodejs: NodeJS
+    network_analysis: 网络抓包
+    dev_rd: 后台开发
+    nginx: NGinx
+    mongodb: MongoDB
+    dev_ios: IOS开发
+    alcatraz: Alcatraz 
+    crash_logs: 崩溃日志 
+    dev_android: Android开发
+    android_studio: Android Studio
     server: 服务器
     generating: 生成器
     deployment: 部署

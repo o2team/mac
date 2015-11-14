@@ -1,10 +1,10 @@
 title: 概述
 ---
-欢迎使用`全栈MAC装机指南`，使用过程中如碰到问题，请查看 [问题解答](troubleshooting.html) 中的解答。如问题仍未解决，请到[Github](https://github.com/o2team/mac/issues)进行提问。
+欢迎使用`MAC全栈开发环境搭建指南`，使用过程中如碰到问题，请查看 [问题解答](troubleshooting.html) 中的解答。如问题仍未解决，请到[Github](https://github.com/o2team/mac/issues)进行提问。
 
 ## 关于
 
-`全栈MAC装机指南` 是由 [O2实验室](http://aotu.io) 整理的，面向互联网全栈职业的MAC系统装机指引手册。它几乎涵盖了使用MAC进行互联网工作的方方面面，包含但不限于通用环境配置、交互及设计、前端开发、后台开发、测试以及部署等各个工作角色、流程步骤所需要的各种软件安装配置指引，奇淫技巧。而目的只有一个：带你用MAC带你装逼带你飞！
+`MAC全栈开发环境搭建指南` 是由 [O2实验室](http://aotu.io) 整理的，面向互联网全栈职业的MAC开发环境搭建指引手册。它几乎涵盖了使用MAC进行互联网工作的方方面面，包含但不限于通用环境配置、交互及设计、前端开发、后台开发、测试以及部署等各个工作角色、流程步骤所需要的各种软件安装配置指引，奇淫技巧。而目的只有一个：带你用MAC带你装逼带你飞！
 
 ## 使用
 
@@ -15,7 +15,7 @@ title: 概述
 
 ## 授权
 
-`全栈MAC装机指南` 相关文档基于[创作共用CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)版权协议，源码开放在[Github](https://github.com/o2team/mac)，欢迎各位同学 [FOLK](https://github.com/o2team/mac/fork) 提供PR贡献内容。
+`MAC全栈开发环境搭建指南` 相关文档基于[创作共用CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)版权协议，源码开放在[Github](https://github.com/o2team/mac)，欢迎各位同学 [FOLK](https://github.com/o2team/mac/fork) 提供PR贡献内容。
 
 ## 求打赏
 

@@ -1,17 +1,15 @@
-title: IOS开发
+title: Alcatraz 
 ---
-
-### Alcatraz
 
 Alcatraz是一款开源的XCode包管理插件，你可以利用它安装主题皮肤等其他插件。
 
-#### 安装
+## 安装
 
 ``` bash
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
 ```
 
-#### 卸载
+## 卸载
 
 1. 删除插件
 

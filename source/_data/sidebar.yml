@@ -2,15 +2,29 @@ docs:
   getting_started:
     overview: index.html
     common: common.html
+    issues: issues.html
   id_vd:
     interactive: interactive.html
     visual:	visual.html
-  fd_rd:
-    dev_common: dev-common.html
-    fd_dev: dev-fd.html
-    rd_dev: dev-rd.html
-    ios_dev: dev-ios.html
-    android_dev: dev-android.html
+  dev_common:
+    homebrew: dev-common/homebrew.html
+    shell_terminal: dev-common/shell-and-terminal.html
+    version_control: dev-common/version-control.html
+    vim: dev-common/vim.html
+    markdown: common/markdown.html
+    misc: dev-common/misc.html
+  dev_fd:
+    sublime_text: dev-fd/sublime-text.html
+    nodejs: dev-fd/nodejs.html
+    network_analysis: dev-fd/network.html
+  dev_rd:
+    nginx: dev-rd/nginx.html
+    mongodb: dev-rd/mongodb.html
+  dev_ios:
+    alcatraz: dev-ios/alcatraz.html
+    crash_logs: dev-ios/crash-logs.html
+  dev_android:
+    android_studio: dev-android/android-studio.html
   miscellaneous:
     contributing: contributing.html
 

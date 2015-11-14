@@ -1,4 +1,4 @@
-title: 全栈MAC装机指南预览版
+title: MAC全栈开发环境搭建指南 - 预览版
 layout: post
 ---
 

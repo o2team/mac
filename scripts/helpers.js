@@ -49,13 +49,15 @@ hexo.extend.helper.register('doc_sidebar', function(className){
   var result = '';
   var self = this;
   var prefix = 'sidebar.' + type + '.';
+  var docRoot = this.url_for('docs/');
 
   _.each(sidebar, function(menu, title){
     result += '<strong class="' + className + '-title">' + self.__(prefix + title) + '</strong>';
 
     _.each(menu, function(link, text){
       var itemClass = className + '-link';
-      if (link === path) itemClass += ' current';
+      link = docRoot + link;
+      if (link.indexOf(path) > -1) itemClass += ' current';
 
       result += '<a href="' + link + '" class="' + itemClass + '">' + self.__(prefix + text) + '</a>';
     })
