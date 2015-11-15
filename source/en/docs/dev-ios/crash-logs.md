@@ -4,7 +4,7 @@ title: Crashing Logs
 
 Firstly, backup the phone via iTunes
 
-![iTunes Sync](../../../docs/img/crash-logs.jpg)
+![iTunes Sync](../../../img/crash-logs.jpg)
 
 Then，you can find the Crashing Logs at：
 

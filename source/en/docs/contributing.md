@@ -13,7 +13,7 @@ The document site was powered by [hexo](https://hexo.io), so install hexo locall
 npm i -g hexo-cli
 ```
 
-### How to contribute?
+### How to contribute
 
 1. Fork [o2team/mac].
 2. Clone the forked repo and install the dependencies

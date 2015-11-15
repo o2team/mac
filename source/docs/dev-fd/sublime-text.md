@@ -73,7 +73,7 @@ SublimeText所有插件都依赖于`Package Control`，默认情况下`Package C
 
 预览效果：
 
-![material theme](../img/material-theme.png)
+![material theme](../../img/material-theme.png)
 
 ## 推荐插件
 

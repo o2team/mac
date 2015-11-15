@@ -1,14 +1,14 @@
 <!-- Scripts -->
-<!-- build:js build/js/main.js -->
-{{ js('js/jquery-2.1.4.min') }}
-{{ js('js/retina') }}
+<!-- build:js js/dist.main.js -->
+{{ js('js/jquery') }}
+{{ js('js/hammer') }}
 {{ js('assets/bootstrap/js/bootstrap') }}
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
 <!-- endbuild -->
 {% if page.layout === 'plugins' %}
-<!-- build:js build/js/plugins.js -->
+<!-- build:js js/dist.plugins.js -->
 {{ js('js/lunr') }}
 {{ js('js/plugins') }}
 <!-- endbuild -->

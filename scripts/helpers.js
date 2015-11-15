@@ -76,7 +76,7 @@ hexo.extend.helper.register('header_menu', function(className){
   var isDefaultLang = lang === 'zh-cn';
 
   _.each(menu, function(path, title){
-    if (!isDefaultLang && ~localizedPath.indexOf(title)) path = lang + path;
+    if (!isDefaultLang && ~localizedPath.indexOf(title)) path = lang + '/' + path;
 
     result += '<li class="' + className + '-item">';
     result += '<a href="' + self.url_for(path) + '" class="' + className + '-link">' + self.__('menu.' + title) + '</a>';
@@ -95,9 +95,12 @@ hexo.extend.helper.register('canonical_url', function(lang){
 
 hexo.extend.helper.register('url_for_lang', function(path){
   var lang = this.page.lang;
-  var url = this.url_for(path);
+  var isDefaultLang = lang === 'zh-cn';
+  var url = path;
 
-  if (lang !== 'zh-cn' && url[0] === '/') url = '/' + lang + url;
+  if (!isDefaultLang && lang) url = lang + '/' + url;
+
+  url = this.url_for(url);
 
   return url;
 });

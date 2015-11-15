@@ -1,7 +1,7 @@
 <header id="header" class="wrapper header">
   <div id="header-inner" class="inner header-inner">
     <h1 id="logo-wrap" class="logo-wrap">
-      <a href="{{ url_for_lang('') }}" id="logo" class="logo"><i class="fa fa-apple"></i></a>
+      <a href="{{ url_for_lang('index.html') }}" id="logo" class="logo"><i class="fa fa-apple"></i></a>
     </h1>
     <nav id="main-nav" class="main-nav">
       <ul>

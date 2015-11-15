@@ -5,7 +5,7 @@ author: 凹凸实验室(LV&天哥)
 language: zh-cn
 timezone: UTC
 url: http://aotu.io/mac
-root: /
+root: /mac/
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
 code_dir: downloads/code

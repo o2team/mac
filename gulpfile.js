@@ -1,8 +1,13 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var cssnano = require('cssnano');
+var gulp    = require('gulp'),
+    $       = require('gulp-load-plugins')(),
+    cssnano = require('cssnano'),
+    yaml    = require('js-yaml'),
+    fs      = require('fs'),
+    cfg     = yaml.safeLoad(fs.readFileSync('_config.yml'));
+
+require('shelljs/global');
 
 var htmlMinifierOptions = {
   removeComments: true,
@@ -17,16 +22,20 @@ var htmlMinifierOptions = {
 
 var dirs = {
   public: 'public',
-  revSrc: 'public/build',
-  revDist: 'public/dist',
   fonts: 'public/fonts',
-  screenshots: 'public/dist/screenshots'
+  imgs: 'public/img',
+  assetsDir:'public/assets'
 };
 
-gulp.task('useref', function(){
+gulp.task('useref', ['hexo'], function(){
 
   return gulp.src('public/**/*.html')
-    .pipe($.useref({searchPath:'public'}))
+    .pipe($.useref({
+        searchPath:'public',
+        transformPath: function(filePath) {
+            return filePath.replace(dirs.public + cfg.root, dirs.public + '/');
+        }
+    }))
     .pipe($.if('*.css', $.postcss([
       cssnano()
     ])))
@@ -36,87 +45,67 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('fonts', function(){
+gulp.task('rev:media', function(){
 
-
-    return gulp.src([dirs.fonts + '/**/*'], {base: dirs.public})
+    return gulp.src([dirs.fonts + '/**/*', dirs.imgs + '/**/*'], {base: dirs.public})
         .pipe($.rev())
-        .pipe(gulp.dest(dirs.revDist))
-        .pipe($.rev.manifest('rev-fonts.json'))
-        .pipe(gulp.dest(dirs.revDist));
+        .pipe(gulp.dest(dirs.assetsDir))
+        .pipe($.rev.manifest('rev-media.json'))
+        .pipe(gulp.dest(dirs.assetsDir));
 
 });
 
+gulp.task('rev:scripts', ['useref', 'rev:media'], function(){
+    var manifest = gulp.src(dirs.assetsDir + '/rev-media.json');
 
-gulp.task('rev', ['useref', 'fonts'], function(){
-
-    var basePath = dirs.revSrc,
-        distPath = dirs.revDist;
-
-    return gulp.src([basePath+'/css/*.css', basePath + '/js/*.js'], {base: basePath})
+    return gulp.src([dirs.public + '/css/dist*.css', dirs.public + '/js/dist*.js'], {base: dirs.public})
         .pipe($.rev())
-        .pipe(gulp.dest(distPath))
+        .pipe($.revReplace({
+            manifest: manifest
+        }))
+        .pipe(gulp.dest(dirs.assetsDir))
         .pipe($.rev.manifest())
-        .pipe(gulp.dest(distPath));
+        .pipe(gulp.dest(dirs.assetsDir));
 
 });
 
-gulp.task("revreplace", ["rev"], function(){
+gulp.task('img:min', ['rev:media'], function(){
 
-  return gulp.src([dirs.public + '/**/rev-manifest.json', "public/**/*.html", "public/dist/**/*.css"])
-	.pipe($.revCollector({
-		replaceReved:true,
-		dirReplacements: {
-			'build/':'dist/'
-		}
-	}))
-	.pipe($.ignore.exclude('./**/rev-*.json'))
-    .pipe(gulp.dest(dirs.public));
+    var pngquant = require('imagemin-pngquant');
+
+    return gulp.src(dirs.assetsDir + '/img/**/*', {base: dirs.assetsDir})
+        .pipe($.imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox:false}],
+            use:[pngquant()]
+        }))
+        .pipe(gulp.dest(dirs.assetsDir))
 });
 
-gulp.task('screenshot:rev', function(){
-  return gulp.src('public/themes/screenshots/*.png')
-    .pipe($.rev())
-    .pipe(gulp.dest(dirs.screenshots))
-    .pipe($.rev.manifest())
-    .pipe(gulp.dest(dirs.screenshots));
+gulp.task("rev:replace", ["rev:scripts"], function(){
+    var manifest = gulp.src([dirs.assetsDir + '/rev-*.json']);
+
+    return gulp.src([ dirs.public + "/**/*.html"])
+        .pipe($.revReplace({
+            manifest: manifest,
+            modifyReved:function(fileName){
+                if(fileName.indexOf('/dist') > -1){
+                    //special files proccessed by gulp-useref
+                    fileName = cfg.root + 'assets/' + fileName;
+                }else {
+                    fileName = 'assets/' + fileName; 
+                }
+                return fileName;
+            }
+        }))
+        .pipe(gulp.dest(dirs.public));
 });
 
-gulp.task('screenshot:resize', ['screenshot:rev'], function(){
-  var resizeOptions = {
-    width: 400,
-    height: 250,
-    crop: true
-  };
+gulp.task('hexo', function(){
+   
+   exec('hexo g');
 
-  return gulp.src('public/dist/screenshots/*.png')
-    // Append "@2x" to the original images
-    .pipe($.rename({
-      suffix: '@2x'
-    }))
-    // Copy original images
-    .pipe(gulp.dest(dirs.screenshots))
-    // Resize images
-    .pipe($.imageResize(resizeOptions))
-    // Remove "@2x" in filename
-    .pipe($.rename(function(path){
-      path.basename = path.basename.replace('@2x', '');
-      return path;
-    }))
-    // Save resized images
-    .pipe(gulp.dest(dirs.screenshots));
 });
 
-gulp.task('screenshot:revreplace', ['screenshot:rev'], function(){
-  return gulp.src([dirs.screenshots + '/rev-manifest.json', 'public/themes/index.html'])
-    .pipe($.revCollector({
-      replaceReved: true,
-      dirReplacements: {
-        '/themes/screenshots': '/dist/screenshots'
-      }
-    }))
-    .pipe(gulp.dest('public/themes'));
-});
-
-gulp.task('screenshot', ['screenshot:rev', 'screenshot:resize', 'screenshot:revreplace']);
-gulp.task('default', ['revreplace', 'screenshot']);
+gulp.task('img', ['img:min']);
+gulp.task('default', ['rev:replace', 'img']);

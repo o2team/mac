@@ -72,4 +72,4 @@ set autoread
 
 看不清楚可以新窗口打开！
 
-![Vim Cheatsheet](../img/vim.png)
+![Vim Cheatsheet](../../img/vim.png)

@@ -15,14 +15,28 @@ $ npm install
 Generate:
 
 ``` bash
-$ hexo generate
+$ hexo g
 ```
 
 Run server:
 
 ``` bash
-$ hexo server --watch
+$ hexo s --watch
 ```
+
+## Deployment
+
+1. Generate and optimize assets
+
+  ```bash
+  gulp
+  ```
+
+2. Deploy to the gh-pages branch
+
+  ```bash
+  hexo deploy
+  ```
 
 ## Contributors
 

@@ -61,4 +61,4 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ### Vim Cheatsheet
 
-![Vim Cheatsheet](../../../docs/img/vim.png)
+![Vim Cheatsheet](../../../img/vim.png)

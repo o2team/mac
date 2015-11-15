@@ -23,14 +23,14 @@ Your network DNS is located at `System Preferences > Network > Wi-Fi > Advanced 
 
 We recommend the default Mail Client distributed along with MAC OS.
 
-### Office & Writing
+### Office and Writing
 
 1. [Office](http://soft.macx.cn/soft4350.htm)
 2. [Evernote](https://www.evernote.com/)
 3. [OneNote](https://onenote.com)
 4. [Marxi.co](https://marxi.co/)
 
-### Achive & Unachive
+### Achive and Unachive
 
 1. The Unachiver
 

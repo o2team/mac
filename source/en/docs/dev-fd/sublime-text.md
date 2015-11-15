@@ -72,7 +72,7 @@ We recommended the cool dark [Material Theme](https://github.com/equinusocio/mat
 
 Preview：
 
-![material theme](../img/material-theme.png)
+![material theme](../../../img/material-theme.png)
 
 ## Recommened Plugins
 
