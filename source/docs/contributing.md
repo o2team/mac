@@ -58,3 +58,10 @@ npm i -g hexo-cli
 在使用`全栈MAC装机指南`过程中碰到任何问题，可以到 [GitHub](https://github.com/o2team/mac/issues) 上留言提问。
 
 [o2team/mac]: https://github.com/o2team/mac
+
+## 贡献者
+
+排名不分先后。
+
+- [mamboer](https://github.com/mamboer)
+- [cnt1992](https://github.com/cnt1992)
