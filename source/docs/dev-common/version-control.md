@@ -9,7 +9,9 @@ Mac 自带的 Git 版本相对比较旧，执行下面命令安装最新版本�
 brew install git
 ```
 
-由于`brew`安装的软件软路径在`/usr/local/bin`下面，而系统自带的软件在`/usr/bin`下面，为了让`brew`安装的软件覆盖系统自带的软件，需要在`.bashrc/.zshrc`的`PATH`添加下面变量：
+由于`brew`安装的软件软路径在`/usr/local/bin`下面，而系统自带的软件在`/usr/bin`下面，为了**执行时**让`brew`安装的软件覆盖系统自带的软件，需要在`.bash_profile/.zshrc`的`PATH`添加下面变量：
+
+> `PATH`的格式为：PATH=`$PATH`:`PATH 1`:`PATH 2`:`PATH 3`:------:`PATH N`
 
 ```
 /usr/local/bin
@@ -19,7 +21,7 @@ brew install git
 
 ```
 # bash shell
-source ~/.bashrc
+source ~/.bash_profile
 
 # zsh shell
 source ~/.zshrc
@@ -68,7 +70,7 @@ brew安装的svn软路径是：
 
     /usr/bin/svn
 
-为了覆盖系统的svn，我们将新svn的路径添加到PATH环境变量中,并放到/usr/bin前面：
+为了**执行时**覆盖系统的svn，我们将新svn的路径添加到PATH环境变量中,并放到/usr/bin前面：
 
 打开.bash_profile文件，添加以下行
 

@@ -12,7 +12,7 @@ brew update
 brew install vim
 ```
 
-上面命令会将 `Vim` 装到 `/usr/local/bin` 下面，为了让 `brew` 安装的软件覆盖系统自带的，需要在 `PATH` 增加 `/usr/local/bin` 在 `/usr/bin` 前面，修改 `.bashrc/.zshrc`：
+上面命令会将 `Vim` 装到 `/usr/local/bin` 下面，为了让 `brew` 安装的软件覆盖系统自带的，需要在 `PATH` 增加 `/usr/local/bin` 在 `/usr/bin` 前面，修改 `.bash_profile/.zshrc`：
 
     export PATH="/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
@@ -20,7 +20,7 @@ brew install vim
 
 ```
 # bash shell
-source ~/.bashrc
+source ~/.bash_profile
 
 # zsh shell
 source ~/.zshrc

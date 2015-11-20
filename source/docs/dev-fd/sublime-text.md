@@ -10,13 +10,14 @@ title: Sublime Text
 
 	#zsh shell
 	alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-	alias nano="subl"
+
+	# 设置SublimeText为默认编辑器
 	export EDITOR="subl"
 
 设置完之后需要执行下面代码将我们的设置生效:
 
 	#bash shell
-	source ~/.bashrc
+	source ~/.bash_profile
 	
 	#zsh shell
 	source ~/.zshrc
@@ -85,7 +86,6 @@ SublimeText所有插件都依赖于`Package Control`，默认情况下`Package C
 	输入 插件的名称 , 找到后回车安装
 	安装成功后在preferences中选择主题
 
-- iTg 主题 （个人比较喜欢的一个主题，还有著名的Soda主题也可以试试）  
 - Emmet （前端工程师利器，各种代码补全自动生成，更多介绍移步 [官方文档](http://docs.emmet.io/)）
 - converttoUTF8（文档转码工具）
 - git（git的一些操作都可以在这里进行）

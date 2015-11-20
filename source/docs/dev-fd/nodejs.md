@@ -7,17 +7,17 @@ title: NodeJS
 
 - curl
 
-  ```
+  ```bash
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
   ```
 - wget
   
-  ```
+  ```bash
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash  
   ```
 - **git**（建议这种安装方法，能够获取到最新的NVM版本）
   
-  ```
+  ```bash
   git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
   . ~/.nvm/nvm.sh
   ```
@@ -57,20 +57,20 @@ title: NodeJS
 
 1. 创建全局包目录
 
-	```
+	```bash
 	$ mkdir "${HOME}/.npm-packages"
 	```
 	
-2. 在.bashrc/.zshrc中增加下面代码
+2. 在.bash_profile/.zshrc中增加下面代码
 	
-	```
+	```bash
 	NPM_PACKAGES="${HOME}/.npm-packages"
 	NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 	PATH="$NPM_PACKAGES/bin:$PATH"
 	```
 3. 在 $HOME/.npmrc 中增加下面代码
 
-	```
+	```bash
 	prefix=${HOME}/.npm-packages
 	```
 	

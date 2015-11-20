@@ -5,14 +5,15 @@ title: NGinx服务器
 
 执行下面命令安装最新版的Nginx：
 
-```
+```bash
 brew install nginx
 ```
 
 安装成功之后可以查看帮助信息：
 
-```
+```bash
 # 查看帮助信息
+
 nginx -h
 
 Usage: nginx [-?hvVtq] [-s signal] [-c filename] [-p prefix] [-g directives]
@@ -32,7 +33,7 @@ Options:
 
 ## 启动服务
 
-```
+```bash
 sudo nginx
 ```
 
@@ -40,20 +41,20 @@ sudo nginx
 
 默认情况下Nginx监听了`8080`这个端口号，若需要修改监听端口号，可以编辑`/usr/local/etc/nginx/nginx.conf`这个文件，但是若要改成`80`端口号而且不是`root`用户登录的话是不会生效的，所以需要执行下面代码：
 
-```
+```bash
 sudo chown root:wheel /usr/local/Cellar/nginx/1.8.0/bin/nginx (nginx的实际安装路径)
 sudo chmod u+s /usr/local/Cellar/nginx/1.8.0/bin/nginx
 ```
 
 一般情况下修改了`配置信息`之后都需要执行下面命令测试`配置信息`是否无误然后重新启动服务器：
 
-```
+```bash
 nginx -t && nginx -s reopen
 ```
 
 ### 设置Nginx为开机启动
 
-```
+```bash
 ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 ```
@@ -67,12 +68,12 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
    **这部分的指令将会影响其他部分的设置**
    
    - worker_processes 2
-   	  
-   	  在配置文件的顶级*main*部分，worker角色的工作进程的个数，master进程是接收并分配给worker处理。一般情况下这个值可以设置为CPU的核数，如果开启了ssl和gzip一般设置为CPU数量的2倍，可以减少I/O操作。如果Nginx服务器还有其它服务，可以考虑适当减少。
+      
+      在配置文件的顶级*main*部分，worker角色的工作进程的个数，master进程是接收并分配给worker处理。一般情况下这个值可以设置为CPU的核数，如果开启了ssl和gzip一般设置为CPU数量的2倍，可以减少I/O操作。如果Nginx服务器还有其它服务，可以考虑适当减少。
    	  
    - worker_connections 2048
-   	
-   	  这个写在*events*部分，每一个worker进程能并发处理（发起）的最大连接数。Nginx作为反向代理服务器，计算公式`最大连接数 = worker_processes * worker_connections / 4`，所以这里客户端最大连接数是1024，这个可以增到8192，但不能超过`worker_rlimit_nofile`。当Nginx作为http服务器时，计算公式里面是除以2.
+      
+      这个写在*events*部分，每一个worker进程能并发处理（发起）的最大连接数。Nginx作为反向代理服务器，计算公式`最大连接数 = worker_processes * worker_connections / 4`，所以这里客户端最大连接数是1024，这个可以增到8192，但不能超过`worker_rlimit_nofile`。当Nginx作为http服务器时，计算公式里面是除以2.
    	  
    - worker_ rlimit_ nofile 10240
 
