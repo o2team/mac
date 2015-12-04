@@ -5,7 +5,8 @@ var gulp    = require('gulp'),
     cssnano = require('cssnano'),
     yaml    = require('js-yaml'),
     fs      = require('fs'),
-    cfg     = yaml.safeLoad(fs.readFileSync('_config.yml'));
+    cfg     = yaml.safeLoad(fs.readFileSync('_config.yml')),
+    path    = require('path');
 
 require('shelljs/global');
 
@@ -33,6 +34,7 @@ gulp.task('useref', ['hexo'], function(){
     .pipe($.useref({
         searchPath:'public',
         transformPath: function(filePath) {
+            filePath = path.normalize(filePath);
             return filePath.replace(dirs.public + cfg.root, dirs.public + '/');
         }
     }))
