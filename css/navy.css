@@ -173,7 +173,7 @@ select {
   }
 }
 body {
-  background: #171f26;
+  background: #23232f;
   font-size: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
@@ -218,8 +218,8 @@ body {
 }
 .content-wrap {
   background: #fff;
-  border-top: 1px solid #161d24;
-  border-bottom: 1px solid #161d24;
+  border-top: 1px solid #21212c;
+  border-bottom: 1px solid #21212c;
   margin: -1px 0;
 }
 table {
@@ -2449,7 +2449,7 @@ table > tbody > tr:nth-of-type(odd) {
   }
 }
 .banner-start-command {
-  background: #283542;
+  background: #363647;
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
   display: inline-block;
   padding: 15px 20px;
@@ -3290,7 +3290,7 @@ a.article-title:hover {
   width: 260px;
   left: -260px;
   height: 100%;
-  background: #171f26;
+  background: #23232f;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
@@ -3458,7 +3458,7 @@ a.article-title:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #171f26;
+  background: #23232f;
   border-top: 1px solid #444;
 }
 .mobile-lang-select-label {
@@ -3524,7 +3524,7 @@ a.article-title:hover {
   color: rgba(255,255,255,0.6);
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
-  background: #171f26;
+  background: #23232f;
   text-align: center;
 }
 #footer:before,
