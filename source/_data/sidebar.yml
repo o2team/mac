@@ -20,6 +20,7 @@ docs:
   dev_rd:
     nginx: dev-rd/nginx.html
     mongodb: dev-rd/mongodb.html
+    strongloop: dev-rd/strongloop.html
   dev_ios:
     alcatraz: dev-ios/alcatraz.html
     crash_logs: dev-ios/crash-logs.html
