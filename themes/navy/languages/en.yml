@@ -41,6 +41,7 @@ sidebar:
     dev_rd: Logic Development
     nginx: NGinx
     mongodb: MongoDB
+    strongloop: Strongloop
     dev_ios: IOS Development
     alcatraz: Alcatraz 
     crash_logs: Crash Logs 

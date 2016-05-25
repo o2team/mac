@@ -41,6 +41,7 @@ sidebar:
     dev_rd: 后台开发
     nginx: NGinx
     mongodb: MongoDB
+    strongloop: Strongloop
     dev_ios: IOS开发
     alcatraz: Alcatraz 
     crash_logs: 崩溃日志 
