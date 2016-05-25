@@ -2,238 +2,339 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://aotu.io/mac/docs/issues.html</loc>
-    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    <loc>http://mac.aotu.io/news/2016/05/25/updates/</loc>
+    
+    <lastmod>2016-05-25T03:36:59.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-rd/strongloop.html</loc>
-    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    <loc>http://mac.aotu.io/docs/index.html</loc>
+    
+    <lastmod>2016-05-25T03:28:49.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-rd/nginx.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/version-control.html</loc>
+    
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-fd/sublime-text.html</loc>
+    <loc>http://mac.aotu.io/docs/issues.html</loc>
+    
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-fd/nodejs.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-rd/strongloop.html</loc>
+    
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-common/vim.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-rd/nginx.html</loc>
+    
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-common/version-control.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/vim.html</loc>
+    
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/contributing.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-fd/nodejs.html</loc>
+    
+    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://mac.aotu.io/docs/dev-fd/sublime-text.html</loc>
+    
+    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://mac.aotu.io/docs/contributing.html</loc>
+    
     <lastmod>2015-11-16T02:36:25.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/contributing.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-rd/mongodb.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/index.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/sublime-text.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-rd/nginx.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/network.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-rd/mongodb.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-android/android-studio.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-ios/crash-logs.html</loc>
+    <loc>http://mac.aotu.io/docs/common/markdown.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-ios/alcatraz.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/homebrew.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-fd/sublime-text.html</loc>
+    <loc>http://mac.aotu.io/news/2015/11/13/first-released/</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-fd/nodejs.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-rd/mongodb.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-fd/network.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/shell-and-terminal.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-common/vim.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/misc.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-common/version-control.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-ios/alcatraz.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-common/shell-and-terminal.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-ios/alcatraz.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-common/misc.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/nodejs.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-common/homebrew.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-fd/network.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/dev-android/android-studio.html</loc>
+    <loc>http://mac.aotu.io/news/2015/11/15/beta-released/</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/news/2015/11/13/first-released/</loc>
+    <loc>http://mac.aotu.io/docs/dev-ios/crash-logs.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/common.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-ios/crash-logs.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/common/markdown.html</loc>
+    <loc>http://mac.aotu.io/en/index.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-common/misc.html</loc>
+    <loc>http://mac.aotu.io/en/docs/contributing.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/news/2015/11/15/beta-released/</loc>
+    <loc>http://mac.aotu.io/en/docs/common.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-common/shell-and-terminal.html</loc>
+    <loc>http://mac.aotu.io/en/docs/index.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/index.html</loc>
+    <loc>http://mac.aotu.io/en/docs/interactive.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-android/android-studio.html</loc>
+    <loc>http://mac.aotu.io/en/docs/issues.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-common/homebrew.html</loc>
+    <loc>http://mac.aotu.io/en/docs/visual.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-rd/mongodb.html</loc>
+    <loc>http://mac.aotu.io/en/docs/common/markdown.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-ios/crash-logs.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-android/android-studio.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-ios/alcatraz.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-common/homebrew.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/index.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-common/shell-and-terminal.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/visual.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-common/misc.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/dev-fd/network.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-common/version-control.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/issues.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-common/vim.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/en/docs/interactive.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-rd/nginx.html</loc>
+    
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/common/markdown.html</loc>
-    <lastmod>2015-11-16T02:22:11.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://aotu.io/mac/index.html</loc>
+    <loc>http://mac.aotu.io/index.html</loc>
+    
     <lastmod>2015-11-13T02:26:28.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/common.html</loc>
+    <loc>http://mac.aotu.io/docs/common.html</loc>
+    
     <lastmod>2015-11-10T02:24:05.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/visual.html</loc>
+    <loc>http://mac.aotu.io/docs/visual.html</loc>
+    
     <lastmod>2015-11-04T03:04:40.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/docs/interactive.html</loc>
+    <loc>http://mac.aotu.io/docs/interactive.html</loc>
+    
     <lastmod>2015-11-04T02:51:57.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/plugins/index.html</loc>
+    <loc>http://mac.aotu.io/themes/index.html</loc>
+    
     <lastmod>2015-10-31T10:20:23.000Z</lastmod>
+    
   </url>
   
   <url>
-    <loc>http://aotu.io/mac/themes/index.html</loc>
+    <loc>http://mac.aotu.io/plugins/index.html</loc>
+    
     <lastmod>2015-10-31T10:20:23.000Z</lastmod>
+    
   </url>
   
 </urlset>

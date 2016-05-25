@@ -1,62 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Aotu.io - Full Stack Your MAC]]></title>
-  <subtitle><![CDATA[Full Stack Your MAC - MAC全栈开发环境搭建指南]]></subtitle>
-  <link href="/mac/atom.xml" rel="self"/>
-  <link href="http://aotu.io/mac/"/>
-  <updated>2015-11-16T02:22:11.000Z</updated>
-  <id>http://aotu.io/mac/</id>
+  <title>Aotu.io | 凹凸实验室 - Full Stack Your MAC</title>
+  <subtitle>Full Stack Your MAC - MAC全栈开发环境搭建指南</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mac.aotu.io/"/>
+  <updated>2016-05-25T03:36:59.000Z</updated>
+  <id>http://mac.aotu.io/</id>
   
   <author>
-    <name><![CDATA[凹凸实验室]]></name>
+    <name>凹凸实验室</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[V1.0.0 Beta Released]]></title>
-    <link href="http://aotu.io/mac/news/2015/11/15/beta-released/"/>
-    <id>http://aotu.io/mac/news/2015/11/15/beta-released/</id>
-    <published>2015-11-15T00:00:00.000Z</published>
-    <updated>2015-11-16T02:22:11.000Z</updated>
-    <content type="html"><![CDATA[<p><code>MAC全栈开发环境搭建指南</code> 中英双语V1.0.0 Beta版本发布。感谢各位开源贡献人员。</p>
-<h2 id="特性">特性</h2><ul>
-<li><p>中文双语版本</p>
-<p>英文为简版，6级刚刚及格抱歉了~<br>欢迎英文达人参与 <code>MAC全栈开发环境搭建指南</code> 的维护。</p>
-</li>
-<li><p>修复了配置站点根目录为网站子目录时切换语言404的bug。</p>
-</li>
-<li>去掉了retinajs的特性，现在srcset支持不错，没必要使用retinajs做响应式图片加载。</li>
-</ul>
-]]></content>
+    <title>V1.0.1 启用二级域名</title>
+    <link href="http://mac.aotu.io/news/2016/05/25/updates/"/>
+    <id>http://mac.aotu.io/news/2016/05/25/updates/</id>
+    <published>2016-05-25T00:00:00.000Z</published>
+    <updated>2016-05-25T03:36:59.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; V1.0.1。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;修复了sidebar的一个bug。&lt;/li&gt;
+&lt;li&gt;站点使用二级域名&lt;a href=&quot;http://mac.aotu.io&quot;&gt;mac.aotu.io&lt;/a&gt;，原来的aotu.io/mac不可用了哟。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p><code>MAC全栈开发环境搭建指南</code> 中英双语V1.0.0 Beta版本发布。感谢各位开源贡献人员。</p>
-<h2 id="特性">特性</h2><ul>
-<li><p>中文双语版本</p>
-<p>英文为简版，6级刚刚及格抱歉了~<br>欢迎英文达人参与 ]]>
+    
+      &lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; V1.0.1。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;修复了sidebar的一个bug。&lt;/li&gt;
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[V1.0.0 Preview (预览版)]]></title>
-    <link href="http://aotu.io/mac/news/2015/11/13/first-released/"/>
-    <id>http://aotu.io/mac/news/2015/11/13/first-released/</id>
+    <title>V1.0.0 Beta Released</title>
+    <link href="http://mac.aotu.io/news/2015/11/15/beta-released/"/>
+    <id>http://mac.aotu.io/news/2015/11/15/beta-released/</id>
+    <published>2015-11-15T00:00:00.000Z</published>
+    <updated>2015-11-16T02:22:11.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; 中英双语V1.0.0 Beta版本发布。感谢各位开源贡献人员。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;中文双语版本&lt;/p&gt;
+&lt;p&gt;英文为简版，6级刚刚及格抱歉了~&lt;br&gt;欢迎英文达人参与 &lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; 的维护。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修复了配置站点根目录为网站子目录时切换语言404的bug。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;去掉了retinajs的特性，现在srcset支持不错，没必要使用retinajs做响应式图片加载。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; 中英双语V1.0.0 Beta版本发布。感谢各位开源贡献人员。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;l
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>V1.0.0 Preview (预览版)</title>
+    <link href="http://mac.aotu.io/news/2015/11/13/first-released/"/>
+    <id>http://mac.aotu.io/news/2015/11/13/first-released/</id>
     <published>2015-11-13T00:00:00.000Z</published>
     <updated>2015-11-16T02:22:11.000Z</updated>
-    <content type="html"><![CDATA[<p><code>MAC全栈开发环境搭建指南</code> 中文预览版发布。感谢各位开源贡献人员。</p>
-<h2 id="特性">特性</h2><ul>
-<li><strong><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">HEXO</a></strong>: 使用hexo作为指南的静态站点引擎。</li>
-<li>按照工作角色将指南分为通用、交互、视觉、前端开发、后台开发等几个部分。</li>
-<li>修复了hexo文档大纲的bug。</li>
-</ul>
-]]></content>
+    
+    <content type="html">&lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; 中文预览版发布。感谢各位开源贡献人员。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HEXO&lt;/a&gt;&lt;/strong&gt;: 使用hexo作为指南的静态站点引擎。&lt;/li&gt;
+&lt;li&gt;按照工作角色将指南分为通用、交互、视觉、前端开发、后台开发等几个部分。&lt;/li&gt;
+&lt;li&gt;修复了hexo文档大纲的bug。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p><code>MAC全栈开发环境搭建指南</code> 中文预览版发布。感谢各位开源贡献人员。</p>
-<h2 id="特性">特性</h2><ul>
-<li><strong><a href="https://github.com/hexojs/hexo" target="_]]>
+    
+      &lt;p&gt;&lt;code&gt;MAC全栈开发环境搭建指南&lt;/code&gt; 中文预览版发布。感谢各位开源贡献人员。&lt;/p&gt;
+&lt;h2 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a
+    
     </summary>
+    
     
   </entry>
   
