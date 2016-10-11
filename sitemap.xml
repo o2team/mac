@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://mac.aotu.io/en/docs/common.html</loc>
+    
+    <lastmod>2016-10-11T06:48:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://mac.aotu.io/docs/common.html</loc>
+    
+    <lastmod>2016-10-11T06:48:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://mac.aotu.io/news/2016/05/25/updates/</loc>
     
     <lastmod>2016-05-25T03:36:59.000Z</lastmod>
@@ -16,13 +30,6 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/docs/dev-common/version-control.html</loc>
-    
-    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://mac.aotu.io/docs/issues.html</loc>
     
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
@@ -30,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/docs/dev-rd/strongloop.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-common/version-control.html</loc>
     
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/docs/dev-rd/nginx.html</loc>
+    <loc>http://mac.aotu.io/docs/dev-rd/strongloop.html</loc>
     
     <lastmod>2015-12-04T01:57:06.000Z</lastmod>
     
@@ -65,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://mac.aotu.io/docs/dev-rd/nginx.html</loc>
+    
+    <lastmod>2015-12-04T01:57:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://mac.aotu.io/docs/contributing.html</loc>
     
     <lastmod>2015-11-16T02:36:25.000Z</lastmod>
@@ -73,20 +87,6 @@
   
   <url>
     <loc>http://mac.aotu.io/docs/dev-rd/mongodb.html</loc>
-    
-    <lastmod>2015-11-16T02:22:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://mac.aotu.io/en/docs/dev-fd/sublime-text.html</loc>
-    
-    <lastmod>2015-11-16T02:22:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://mac.aotu.io/en/docs/dev-fd/network.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
@@ -121,7 +121,7 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/en/docs/dev-rd/mongodb.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-ios/crash-logs.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/en/docs/dev-fd/nodejs.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-rd/mongodb.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/en/docs/dev-ios/crash-logs.html</loc>
+    <loc>http://mac.aotu.io/en/index.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/en/index.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/nodejs.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
@@ -205,7 +205,7 @@
   </url>
   
   <url>
-    <loc>http://mac.aotu.io/en/docs/common.html</loc>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/sublime-text.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
     
@@ -289,6 +289,13 @@
   </url>
   
   <url>
+    <loc>http://mac.aotu.io/en/docs/dev-fd/network.html</loc>
+    
+    <lastmod>2015-11-16T02:22:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://mac.aotu.io/en/docs/dev-rd/nginx.html</loc>
     
     <lastmod>2015-11-16T02:22:11.000Z</lastmod>
@@ -299,13 +306,6 @@
     <loc>http://mac.aotu.io/index.html</loc>
     
     <lastmod>2015-11-13T02:26:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://mac.aotu.io/docs/common.html</loc>
-    
-    <lastmod>2015-11-10T02:24:05.000Z</lastmod>
     
   </url>
   
