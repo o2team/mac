@@ -13,6 +13,12 @@ Your network DNS is located at `System Preferences > Network > Wi-Fi > Advanced 
 
 ## Recommended Softwares
 
+### Input Sources
+
+1. [Sogou Pinyin Input](http://pinyin.sogou.com/mac/introduce.php)
+2. [Sogou Wubi Input](http://pinyin.sogou.com/mac/wubi.php)
+3. [Baidu Mac Input](https://srf.baidu.com/input/mac.html)
+
 ### IM
 
 1. [QQ](http://im.qq.com/macqq/index.shtml)
