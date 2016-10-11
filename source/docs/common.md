@@ -20,6 +20,12 @@ title: 通用设置
 
 本文内容如对软件版权方存在不良影响，受影响方可在文末留言要求删除相关链接内容。
 
+### 输入法软件
+
+1. [搜狗拼音输入法](http://pinyin.sogou.com/mac/introduce.php)
+2. [搜狗五笔输入法](http://pinyin.sogou.com/mac/wubi.php)
+3. [百度Mac输入法](https://srf.baidu.com/input/mac.html)
+
 ### 通讯软件
 
 1. [QQ](http://im.qq.com/macqq/index.shtml)
