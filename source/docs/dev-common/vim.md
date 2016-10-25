@@ -3,9 +3,9 @@ title: Vim编辑器
 
 对于经常使用命令行终端的同学来说，`Vim` 是必备良品，它不仅仅是一个编辑器，更是一个强大的 IDE。
 
-### Vim更新
+### Vim安装及更新
 
-截至目前(2015.11.6)Mac自带的Vim版本还是7.3版本的，而最新版本的已经是7.4了，执行下面命令更新到最新版本。
+截至目前(2016.10.25)Mac自带的Vim版本还是7.3版本的，而最新版本的已经是8.0了，执行下面命令更新到最新版本。
 
 ```
 brew update
@@ -24,6 +24,13 @@ source ~/.bash_profile
 
 # zsh shell
 source ~/.zshrc
+```
+
+如果`install`命令提示版本已安装，可以使用`upgrade`命令安装升级至最新版本
+
+```
+brew update
+brew upgrade --HEAD vim
 ```
 
 ### Vim配置

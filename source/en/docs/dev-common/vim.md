@@ -10,6 +10,14 @@ brew update
 brew install vim
 ```
 
+Or use `upgrade` command as bellow,
+
+```
+brew update
+brew upgrade --HEAD vim
+```
+
+
 The brew installed version `Vim` is located at  `/usr/local/bin` ，in order to override the old one, we need to export `/usr/local/bin` to `$PATH`，open and edit `.bashrc/.zshrc`：
 
     export PATH="/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin"
