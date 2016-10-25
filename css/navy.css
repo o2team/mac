@@ -175,7 +175,7 @@ select {
 body {
   background: #23232f;
   font-size: 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   color: #444;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -2332,7 +2332,6 @@ table > tbody > tr:nth-of-type(odd) {
   line-height: 45px;
   display: inline-block;
   text-align: center;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   font-size: 24px;
   color: #fff;
@@ -2367,7 +2366,7 @@ table > tbody > tr:nth-of-type(odd) {
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
   transition: 0.2s;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   text-transform: uppercase;
   display: block;
   padding: 0 20px;
@@ -2412,7 +2411,7 @@ table > tbody > tr:nth-of-type(odd) {
 .lang-select-label {
   color: #fff;
   opacity: 0.7;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   line-height: 45px;
 }
 .lang-select-label span {
@@ -2430,7 +2429,7 @@ table > tbody > tr:nth-of-type(odd) {
   font-size: 40px;
   line-height: 1.15;
   font-weight: 300;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
 }
 @media screen and (min-width: 769px) {
   .banner-title {
@@ -2554,7 +2553,7 @@ table > tbody > tr:nth-of-type(odd) {
 }
 .intro-feature-title {
   color: #0e83cd;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   font-size: 24px;
 }
 .intro-feature-desc {
@@ -2588,7 +2587,7 @@ table > tbody > tr:nth-of-type(odd) {
 }
 .intro-get-started-link {
   font-size: 18px;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   display: inline-block;
   color: #0e83cd;
   text-decoration: none;
@@ -2622,7 +2621,7 @@ table > tbody > tr:nth-of-type(odd) {
 .sidebar-title {
   margin-top: 40px;
   padding: 10px 0;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   font-weight: bold;
   color: #0e83cd;
   display: inline-block;
@@ -2632,7 +2631,7 @@ table > tbody > tr:nth-of-type(odd) {
 .sidebar-link,
 .toc-link,
 .nav-link {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   display: block;
   color: #444;
   text-decoration: none;
@@ -2763,7 +2762,7 @@ table > tbody > tr:nth-of-type(odd) {
   color: #444;
   display: block;
   margin-bottom: 40px;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
 }
 .article-toc-top:hover {
   color: #1094e8;
@@ -2781,7 +2780,7 @@ table > tbody > tr:nth-of-type(odd) {
 }
 .article-title {
   float: left;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   font-size: 36px;
   font-weight: 300;
   text-decoration: none;
@@ -3007,7 +3006,7 @@ a.article-title:hover {
   color: #0e83cd;
   text-decoration: none;
   font-weight: bold;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   text-transform: uppercase;
   position: absolute;
 }
@@ -3060,7 +3059,7 @@ a.article-title:hover {
   clear: both;
 }
 #plugin-list-title {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
@@ -3148,7 +3147,7 @@ a.article-title:hover {
   display: block;
 }
 .plugin-name {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   font-weight: bold;
   color: #0e83cd;
   font-size: 20px;
@@ -3274,7 +3273,7 @@ a.article-title:hover {
   color: #1094e8;
 }
 .archive-post-title {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   float: left;
   font-weight: bold;
 }
@@ -3295,7 +3294,7 @@ a.article-title:hover {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   transition: 0.4s;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
 }
 .mobile-nav-on .mobile-nav {
   -webkit-transform: translateX(100%);
@@ -3351,7 +3350,6 @@ a.article-title:hover {
   -moz-transform-origin: 0;
   -ms-transform-origin: 0;
   transform-origin: 0;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .mobile-nav-toggle-bar:first-child {
@@ -3400,7 +3398,6 @@ a.article-title:hover {
 .mobile-search-btn:before {
   width: 18px;
   height: 18px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid #fff;
   top: 0;
@@ -3412,7 +3409,6 @@ a.article-title:hover {
   background: #fff;
   top: 15px;
   right: 0;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -3522,7 +3518,7 @@ a.article-title:hover {
 #footer {
   padding: 40px 0;
   color: rgba(255,255,255,0.6);
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft Yahei";
   position: relative;
   background: #23232f;
   text-align: center;
