@@ -8,6 +8,12 @@ title: MongoDB
 ```
 brew install mongodb
 ```
+如已安装，可以用下面的命令进行升级：
+
+```
+brew update
+brew upgrade --HEAD mongodb
+```
 
 安装成功之后可以执行下面命令查看帮助信息
 
