@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.8"
   },
   "scripts": {
     "build": "hexo generate && gulp"

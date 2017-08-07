@@ -77,21 +77,33 @@ The missing package manager for OS X.
   brew list
   ```
 
-## Install Homebrew extension Cask
+## HomeBrew Cask
+
+`brew` had integrated `cask` internally after 2015 year.
+
+If you had installed `cask` before 2015, you should uninstall it firstly and then upgrade `brew` to the latest version.
 
 ```bash
-brew install caskroom/cask/brew-cask
+brew update
+brew cleanup
+brew cask cleanup
+brew uninstall --force brew-cask
+brew update
 ```
 
-## Install common applications via Homebrew
+If you never installed `cask` before, you only need to upgrade `brew`.
 
-```bash
-brew install ack autojump automake colordiff curl git git-flow \
-             hub icoutils imagemagick libmemcached memcached openssl ossp-uuid qt \
-             readline redis tmux wget libxml2
+```
+brew update
 ```
 
-## Install applications via Homebrew Cask
+### Search applications via Cask
+
+```
+brew cask search qq
+```
+
+### Install applications via Cask
 
 ```bash
 brew cask install anvil

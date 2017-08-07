@@ -97,28 +97,40 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ### 安装HomeBrew Cask
 
-  HomeBrew Cask依赖于Xcode以及HomeBrew，建议在装这个之前装好前面两个软件，在`Terminal`执行下面命令进行安装：
+2015年12月后安装的`brew`自带`cask`。
 
-  ```bash
-  brew tap caskroom/cask && brew install brew-cask
-  ```
+如果你已在老版本的`brew`里面安装过`cask`，可以卸载掉它再更新`brew`：
+
+```bash
+brew update
+brew cleanup
+brew cask cleanup
+brew uninstall --force brew-cask
+brew update
+```
+
+对于老版本`brew`，但没有安装过`cask`，可以直接更新`brew`获得`cask`：
+
+```
+brew update
+```
 
 ### 使用HomeBrew Cask
 
-  搜索想要安装的软件，在`Terminal`输入下面命令即可：
+搜索想要安装的软件，在`Terminal`输入下面命令即可：
 
-  ```bash
-  brew cask search qq
-  ```
+```bash
+brew cask search qq
+```
 
-  一些推荐安装的程序，一键搞定：
+一些推荐安装的程序，一键搞定：
 
-  ```bash
-  rew cask install alfred cleanmymac cheatsheet dropbox google-chrome sublime-text
-  ```
+```bash
+brew cask install alfred cleanmymac cheatsheet dropbox google-chrome sublime-text
+```
 
-  如果你是一个热衷于`Alfred`的爱好者（不熟悉这个软件的下面会讲到），默认情况下`Alfred`是不会搜索到`HomeBrew Cask`安装的软件的，你需要额外执行下面命令关联起来才行：
+如果你是一个热衷于`Alfred`的爱好者（不熟悉这个软件的下面会讲到），默认情况下`Alfred`是不会搜索到`HomeBrew Cask`安装的软件的，你需要额外执行下面命令关联起来才行：
 
-  ```bash
-  brew cask alfred link
-  ```
+```bash
+brew cask alfred link
+```
