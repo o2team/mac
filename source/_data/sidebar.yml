@@ -6,6 +6,7 @@ docs:
   id_vd:
     interactive: interactive.html
     visual:	visual.html
+    cooperation: cooperation.html
   dev_common:
     homebrew: dev-common/homebrew.html
     shell_terminal: dev-common/shell-and-terminal.html
