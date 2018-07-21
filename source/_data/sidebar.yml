@@ -15,13 +15,15 @@ docs:
     markdown: common/markdown.html
     misc: dev-common/misc.html
   dev_fd:
-    sublime_text: dev-fd/sublime-text.html
+    editor: dev-fd/editor.html
     nodejs: dev-fd/nodejs.html
     network_analysis: dev-fd/network.html
+    chrome_plugins: dev-fd/chrome_plugins.html
   dev_rd:
     nginx: dev-rd/nginx.html
     mongodb: dev-rd/mongodb.html
     strongloop: dev-rd/strongloop.html
+    python: dev-rd/python.html
   dev_ios:
     alcatraz: dev-ios/alcatraz.html
     crash_logs: dev-ios/crash-logs.html

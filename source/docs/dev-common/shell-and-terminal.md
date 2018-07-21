@@ -3,7 +3,7 @@ title: Shell以及终端软件
 
 全栈开发在Mac下面会经常使用终端，在`OS X El Capitan‎`之前，恐怕系统默认的`Terminal+bash+screen`是无法跟`iTerms+zsh+tmux`进行匹敌。
 
-普通MAC用户大可不必安装这三个软件，但是作为`开发者`，装上这三个软件会让你爱不释手。
+普通Mac用户大可不必安装这三个软件，但是作为 **开发者** ，装上这三个软件会让你爱不释手。
 
 ## iTerm2
 
@@ -182,6 +182,10 @@ Prefix-Command前置操作：所有下面介绍的快捷键，都必须以前置
 
 了解更多`tmux`可以点击[这里](http://foocoder.com/blog/zhong-duan-huan-jing-zhi-tmux.html/)
 
+## A bonus! --- [Go2Shell](http://zipzapmac.com/Go2Shell)
+**Go2Shell** 是一个便捷小工具，它可以实现一次点击，即可在当前目录中打开终端，这比打开终端->`cd`到当前目录直观快捷的多，就像下面这样:
+
+![Go2Shell](../../img/go2shell.png)
 
 ## 其他常见问题
 

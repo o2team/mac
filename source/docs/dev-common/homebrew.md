@@ -1,8 +1,8 @@
 title: Homebrew
 ---
 
-拿到一台新的MAC，首先推荐安装`HomeBrew`。
-HomeBrew是Mac下面的一个包管理器，方便我们安装一些Mac OS没有的UNIX工具、软件。
+拿到一台新的Mac，首先推荐安装`Homebrew`。
+Homebrew是Mac下面的一个包管理器，方便我们安装一些macOS没有的UNIX工具、软件。
 
 ## 安装HomeBrew
 

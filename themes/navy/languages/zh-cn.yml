@@ -36,13 +36,15 @@ sidebar:
     markdown: Markdown手册
     misc: 其他设置
     dev_fd: 前端开发
-    sublime_text: Sublime Text 
+    editor: 编辑器
     nodejs: NodeJS
     network_analysis: 网络抓包
     dev_rd: 后台开发
-    nginx: NGinx
+    nginx: Nginx
     mongodb: MongoDB
     strongloop: Strongloop
+    chrome_plugins: Chrome插件
+    python: Python
     dev_ios: IOS开发
     alcatraz: Alcatraz 
     crash_logs: 崩溃日志 
