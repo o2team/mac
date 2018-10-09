@@ -1,5 +1,9 @@
-title: Sublime Text
+title: 编辑器
 ---
+
+> 选择一个好的编辑器能够极大的提高前端开发效率
+
+# Sublime Text
 
 ## `subl` Shell命令设置
 
@@ -96,3 +100,10 @@ SublimeText所有插件都依赖于`Package Control`，默认情况下`Package C
 - markdownPerview（写markdown可以`command+b`直接生成html预览）
 - evernote（配合markdownPerview就可以写markdown同步到evernote去了）
 
+# Visual Studio Code
+
+这或许是最好的当代编辑器，它和 [**Atom**](https://atom.io/) 一样都基于 [**Electron**](https://electronjs.org/)，但是效能更好，加载大文件时尤为明显。
+
+![VSCode](../../img/vscode.png)
+
+**Visual Studio Code** 简洁的设计，高亮区全局显示，集成的控制台、版本控制，丰富的插件系统，便捷的分栏显示和"禅"模式等等功能都是以往编辑器特性的集大成者，墙裂推荐。

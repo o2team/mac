@@ -36,14 +36,16 @@ sidebar:
     markdown: Markdown Cheatsheet
     misc: Miscellaneous
     dev_fd: Front-End Development
-    sublime_text: Sublime Text 
+    editor: Editor 
     nodejs: NodeJS
     network_analysis: Network Analysis
+    chrome_plugins: Chrome Plugins
     dev_rd: Logic Development
-    nginx: NGinx
+    nginx: Nginx
     mongodb: MongoDB
     strongloop: Strongloop
-    dev_ios: IOS Development
+    python: Python
+    dev_ios: iOS Development
     alcatraz: Alcatraz 
     crash_logs: Crash Logs 
     dev_android: Android Development
